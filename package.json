@@ -1,19 +1,15 @@
 {
   "name": "rent-car",
   "version": "1.0.0",
-  "description": "Website to rent a car, Diplom of Glo Acadamy",
-  "private": true,
+  "description": "Site: Rent-car diplom of Glo-Acadamy (web-start)",
+  "main": "gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/serhii-edit/rent-car.git"
   },
-  "keywords": [],
   "author": "Serhii Yakymenko",
   "license": "ISC",
   "bugs": {
@@ -21,13 +17,11 @@
   },
   "homepage": "https://github.com/serhii-edit/rent-car#readme",
   "devDependencies": {
-    "css-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.2",
-    "i": "^0.3.6",
-    "lodash": "^4.17.21",
-    "style-loader": "^3.2.1",
-    "webpack": "^5.49.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.0.0"
   }
 }
