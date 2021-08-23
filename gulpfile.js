@@ -22,12 +22,13 @@ function bs() {
   watch("./src/js/**/*.js", {ignoreInitial: false}).on("change", browserSync.reload);
 };
 
-function scss() {
+function scss(done) {
   return src("./src/scss/**/*.scss")
   .pipe(sass())
   .pipe(dest("./src/css/"))
   .pipe(browserSync.stream());
-  // done();
+  done();
+  // done addes may cause Errors!
 };
 
 
