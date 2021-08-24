@@ -1,0 +1,40 @@
+Beggining: Logo
+First Title: who you, title
+
+use of user: Easy Simple-nav understanding point.
+Call to action (invite, offer give). 
+
+Skills include(relivant)-you work want important
+Certificates...
+
+Bio - page about (tell your story)
+More engaging than info-facts.
+Age born, Live in, ready to work, be hired, online-offline?
+
+Projects: {
+ Block
+ Duration of develop
+ Role - Task
+ Description
+ Dificulties
+ Solution
+ Notable
+ Technology Used.
+
+ Link to github - about write
+ Link to demo-website.
+}
+
+Adds: {
+
+}
+
+(seo)
+
+End call to action.
+
+Port (2)
+1. https://jonny.me/
+2. mattfarley.ca
+Video: https://www.youtube.com/watch?v=FK4YusHIIj0&t=768s
+Face: https://buffer.com/library/best-profile-picture-science-research-psychology/
