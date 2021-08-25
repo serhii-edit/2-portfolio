@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,14 +338,19 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
 }
 
-html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, span {
+html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .container {
@@ -366,27 +372,71 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, span {
 
 .header {
   width: 100%;
+  position: relative;
 }
 .header--margin {
   margin-top: 25px;
 }
-.header__wrap- {
-  display: flex;
-  justify-content: space-between;
+.header__wrap-logo {
+  position: relative;
 }
 .header__logo {
-  display: inline-block;
-  border-radius: 100%;
-  border: 3px solid red;
+  position: relative;
   margin-right: 15px;
+  display: inline-block;
+  padding: 8px;
+  padding-bottom: 5px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+.header__logo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -4px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(180deg, #593EFF 0%, #FF00A8 100%);
+}
+.header__sy-logo {
+  width: 45px;
+  height: 43px;
+  display: inline-block;
 }
 .header__name {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: capitalize;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
   text-align: left;
   top: 50%;
   transform: translateY(-50%);
+}
+.header__nav {
+  position: fixed;
+  top: 25px;
+  right: 35px;
+}
+.header__nav-button {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0px 25px 20px -20px;
+  transition: all 200ms;
+}
+.header__nav-button:hover {
+  color: #593EFF;
+  box-shadow: #593eff;
+}
+.header__nav-button + .header__nav-button {
+  margin-top: 15px;
 }
