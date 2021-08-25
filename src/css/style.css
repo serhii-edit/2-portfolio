@@ -375,7 +375,7 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   position: relative;
 }
 .header--margin {
-  margin-top: 25px;
+  padding-top: 20px;
 }
 .header__wrap-logo {
   position: relative;
@@ -439,4 +439,28 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
 }
 .header__nav-button + .header__nav-button {
   margin-top: 15px;
+}
+.hero {
+  margin-top: -79.2px;
+  height: 100vh;
+  border: 3px dashed red;
+}
+.hero__container {
+  padding-top: 79.2px;
+}
+.hero__content {
+  margin-top: 150px;
+}
+.hero__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #4B4B4B;
+}
+.hero__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4B4B4B;
 }

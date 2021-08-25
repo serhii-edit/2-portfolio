@@ -1,0 +1,26 @@
+.hero {
+  margin-top: -79.2px;
+  height: 100vh;
+  border: 3px dashed red;
+  &__container {
+    padding-top: 79.2px;
+  }
+  &__content {
+    margin-top: 150px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: $darkSilver;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: $darkSilver;
+    
+  }
+}
