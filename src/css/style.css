@@ -353,6 +353,10 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   font-weight: 400;
 }
 
+.span-block {
+  display: block;
+}
+
 .container {
   display: block;
   max-width: 83.34%;
@@ -404,8 +408,8 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   background: linear-gradient(180deg, #593EFF 0%, #FF00A8 100%);
 }
 .header__sy-logo {
-  width: 45px;
-  height: 43px;
+  width: 40px;
+  height: 38px;
   display: inline-block;
 }
 .header__name {
@@ -449,7 +453,7 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   padding-top: 79.2px;
 }
 .hero__content {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 .hero__title {
   font-style: normal;
@@ -457,10 +461,56 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   font-size: 35px;
   text-transform: uppercase;
   color: #4B4B4B;
+  line-height: 40px;
+  margin-bottom: 10px;
 }
 .hero__subtitle {
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: #4B4B4B;
+  max-width: 406px;
+}
+.hero__wrap-bottom {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__wrap-face {
+  position: relative;
+  padding: 8px;
+  border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+}
+.hero__wrap-face:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(180deg, #593EFF 0%, #FF00A8 100%);
+}
+.hero__face {
+  width: 170px;
+  height: 170px;
+  background-color: #4B4B4B;
+  border-radius: 100%;
+}
+.hero__online {
+  position: absolute;
+  background-color: #0FB06D;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  bottom: 35px;
+  right: 7px;
 }

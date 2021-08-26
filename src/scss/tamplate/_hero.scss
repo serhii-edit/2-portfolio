@@ -6,7 +6,7 @@
     padding-top: 79.2px;
   }
   &__content {
-    margin-top: 150px;
+    margin-top: 130px;
   }
   &__title {
     font-style: normal;
@@ -14,13 +14,62 @@
     font-size: 35px;
     text-transform: uppercase;
     color: $darkSilver;
+
+    line-height: 40px;
+    margin-bottom: 10px;
   }
   &__subtitle {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     
     color: $darkSilver;
-    
+    max-width: 406px;
+  }
+  // End of Text
+
+  // Start Face
+  &__wrap {
+    &-bottom {
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-face {
+      position: relative;
+      padding: 8px;
+      border-radius: 100%;
+
+      border-radius: 100%;
+      background-clip: padding-box;
+      // Border start
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -1px; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        background: linear-gradient(180deg, #593EFF 0%, #FF00A8 100%);
+      }
+      // Border end
+    }
+  }
+  &__face {
+    width: 170px;
+    height: 170px;
+    background-color: $darkSilver;
+    border-radius: 100%;
+  }
+  &__online {
+    position: absolute;
+    background-color: #0FB06D;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    bottom: 35px;
+    right: 7px;
   }
 }
