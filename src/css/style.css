@@ -472,6 +472,7 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   max-width: 406px;
 }
 .hero__wrap-bottom {
+  margin-top: -55px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -480,8 +481,6 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
 }
 .hero__wrap-face {
   position: relative;
-  padding: 8px;
-  border-radius: 100%;
   border-radius: 100%;
   background-clip: padding-box;
 }
@@ -493,7 +492,7 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -1px;
+  margin: -4px;
   /* !importanté */
   border-radius: inherit;
   /* !importanté */
@@ -502,7 +501,7 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
 .hero__face {
   width: 170px;
   height: 170px;
-  background-color: #4B4B4B;
+  background-color: #fff;
   border-radius: 100%;
 }
 .hero__online {
@@ -512,5 +511,37 @@ html, body, ul, li, ol, h1, h2, h3, h4, h5, h6, p, a, span {
   height: 22px;
   border-radius: 100%;
   bottom: 35px;
-  right: 7px;
+  right: -4px;
+}
+.hero__arrow {
+  position: relative;
+  height: 100px;
+  width: 3px;
+  background: linear-gradient(180deg, #FF00A8 50%, #593EFF 100%);
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.hero__arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -3px;
+  display: inline-block;
+  border-radius: 45%;
+  background-color: #593EFF;
+  width: 2px;
+  height: 11px;
+  transform: rotate(40deg);
+}
+.hero__arrow::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -3px;
+  display: inline-block;
+  border-radius: 45%;
+  background-color: #593EFF;
+  width: 2px;
+  height: 11px;
+  transform: rotate(-40deg);
 }

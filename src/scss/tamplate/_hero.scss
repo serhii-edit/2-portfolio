@@ -31,6 +31,7 @@
   // Start Face
   &__wrap {
     &-bottom {
+      margin-top: -55px;
       margin-right: auto;
       margin-left: auto;
       display: flex;
@@ -39,9 +40,7 @@
     }
     &-face {
       position: relative;
-      padding: 8px;
-      border-radius: 100%;
-
+      // padding: 0px;
       border-radius: 100%;
       background-clip: padding-box;
       // Border start
@@ -50,7 +49,7 @@
         position: absolute;
         top: 0; right: 0; bottom: 0; left: 0;
         z-index: -1;
-        margin: -1px; /* !importanté */
+        margin: -4px; /* !importanté */
         border-radius: inherit; /* !importanté */
         background: linear-gradient(180deg, #593EFF 0%, #FF00A8 100%);
       }
@@ -60,7 +59,7 @@
   &__face {
     width: 170px;
     height: 170px;
-    background-color: $darkSilver;
+    background-color: $white;
     border-radius: 100%;
   }
   &__online {
@@ -70,6 +69,39 @@
     height: 22px;
     border-radius: 100%;
     bottom: 35px;
-    right: 7px;
+    right: -4px;
+  }
+
+  &__arrow {
+    position: relative;
+    height: 100px;
+    width: 3px;
+    background: linear-gradient(180deg, #FF00A8 50%, $primary 100%);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    &::after {
+      content: 	"";
+      position: absolute;
+      bottom: -1px;
+      right: -3px;
+      display: inline-block;
+      border-radius: 45%;
+      background-color: $primary;
+      width: 2px;
+      height: 11px;
+      transform: rotate(40deg);
+    }
+    &::before {
+      content: 	"";
+      position: absolute;
+      bottom: -1px;
+      left: -3px;
+      display: inline-block;
+      border-radius: 45%;
+      background-color: $primary;
+      width: 2px;
+      height: 11px;
+      transform: rotate(-40deg);
+    }
   }
 }
