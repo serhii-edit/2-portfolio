@@ -1,11 +1,14 @@
 .hero {
-  margin-top: -79.2px;
+  // position: relative;
+  margin-top: -80.5px;
+  border: 2px solid $green;
   height: 100vh;
-  border: 3px dashed red;
+  overflow: hidden;
   &__container {
     padding-top: 79.2px;
   }
   &__content {
+    position: relative;
     margin-top: 130px;
   }
   &__title {
@@ -79,6 +82,7 @@
     background: linear-gradient(180deg, #FF00A8 50%, $primary 100%);
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
+    margin-bottom: 30px;
     &::after {
       content: 	"";
       position: absolute;
@@ -104,4 +108,54 @@
       transform: rotate(-40deg);
     }
   }
+  &__portfolio {
+    padding: 23px;
+    padding-left: 29px;
+    padding-right: 29px;
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #593EFF 0%, #00C773 100%);
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 1000ms;
+    &:hover {
+      background: linear-gradient(90deg, #593EFF 10%, #00C773 90%);
+    }
+  }
+
+  // socials (START)
+  &__wrap-social {
+    // display: none;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+  }
+  &__ul-social {
+    &::after {
+      content: "";
+      display: block;
+      height: 80px;
+      width: 2.5px;
+      background-color: $black;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__li-social, &__social {
+    text-align: center;
+  }
+  &__li-social {
+    margin-bottom: 15px;
+  }
+  &__social {
+    width: 25px;
+  }
+  &__a-social--icon {
+    font-size: 27px;
+    text-align: center;
+    color: $blue;
+  }
+  // socials (END)
 }

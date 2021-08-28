@@ -1,6 +1,9 @@
 .header {
   width: 100%;
   position: relative;
+  &__container {
+    position: relative;
+  }
   &--margin {
     padding-top: 20px;
     // padding-bottom: 10px;
@@ -79,8 +82,42 @@
       }
     }
   }
-  &__container-list {
-
+  &__menu {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 4px;
+    background: linear-gradient(90deg, $primary 0%, $green 100%);
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 4px;
+      background: linear-gradient(90deg, $primary 0%, $green 100%);
+      top: -7px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 4px;
+      background: linear-gradient(90deg, $primary 0%, $green 100%);
+      bottom: -7px;
+    }
+    &:hover {
+      cursor: pointer;
+      background: $green;
+      .header__menu::before, .header__menu::after {
+        background: $green;
+      }
+    }
   }
 
 } // .header

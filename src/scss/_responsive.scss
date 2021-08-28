@@ -1,0 +1,116 @@
+// Header (START)
+@media screen and (max-width: 992px) {
+  .header {
+    &__container-list { // Temporary until Burger will done
+      display: none;
+      visibility: hidden;
+    }
+    &__menu {
+      display: block;
+      visibility: visible;
+    }
+  }
+}
+@media screen and (max-width: 395px) {
+  .header {
+    &__name {
+      font-size: 14px;
+    }
+    &__sy-logo {
+      width: 28px;
+      height: 28px;
+    }
+    &__logo::before {
+      margin: -3px;
+    }
+  }
+}
+// Hender (END) 
+
+// Hero (START)
+@media screen and (max-width: 1155px) {
+  .hero {
+    &__content {
+      margin-top: 95px;
+    }
+    &__wrap {
+      &-text {
+        display: inline-block;
+        margin-bottom: 25px;
+      }
+      &-bottom {
+        // position: absolute;
+        // top: 0; 
+        // right: 0;
+        margin: 0;
+      }
+    }
+    &__arrow {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
+    &__wrap {
+      &-bottom {
+        align-items: flex-start;
+      }
+    }
+    &__container-face {
+      position: absolute;
+      top: 0;
+      right: 7%;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .hero {
+    &__title {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__container-face {
+      position: unset;
+      top: 0;
+      right: 0;
+      margin-bottom: 25px;
+    }
+    &__wrap {
+      &-bottom {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .hero {
+    &__title {
+      font-size: 20px;
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      font-size: 13px;
+      max-width: 240px;
+      margin: auto;
+    }
+    &__wrap-text {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// Hero (END)
