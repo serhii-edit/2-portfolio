@@ -1,7 +1,8 @@
 .hero {
   position: relative;
-  margin-top: -80.5px;
-  border: 2px solid $green;
+  // margin-top: -80.5px;
+  margin-top: -74.5px;
+  // border: 2px solid $green;
   width: 100%;
   height: 100vh;
   &__container {
@@ -137,6 +138,7 @@
 
   // socials (START)
   &__wrap-social {
+    z-index: -1;
     // display: none;
     position: absolute;
     left: 15px;
@@ -169,4 +171,15 @@
     color: $blue;
   }
   // socials (END)
+  &-wave {
+    width: 100%;
+    max-width: 100%;
+    height: 115px;
+    background-image: url("../img/svg/wave.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    margin-top: -90px;
+  }
 }
