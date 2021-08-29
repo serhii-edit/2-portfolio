@@ -554,15 +554,16 @@ a {
   z-index: -1;
   margin: -4px;
   /* !importanté */
+  margin-bottom: 0;
   border-radius: inherit;
   /* !importanté */
   background: linear-gradient(180deg, #593EFF 0%, #FF00A8 100%);
 }
 .hero__face {
   width: 170px;
-  height: 170px;
+  height: 169px;
   background-color: #fff;
-  border-radius: 100%;
+  border-radius: 170px;
 }
 .hero__online {
   position: absolute;
