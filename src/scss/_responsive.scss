@@ -30,9 +30,9 @@
 // Hero (START)
 @media screen and (max-width: 1155px) {
   .hero {
-    &__content {
-      margin-top: 95px;
-    }
+    // &__content {
+    //   margin-top: 95px;
+    // }
     &__wrap {
       &-text {
         display: inline-block;
@@ -54,6 +54,9 @@
 
 @media screen and (max-width: 992px) {
   .hero {
+    &__container {
+      padding-top: 0;
+    }
     &__wrap {
       &-bottom {
         align-items: flex-start;
@@ -62,7 +65,7 @@
     &__container-face {
       position: absolute;
       top: 0;
-      right: 7%;
+      right: 0%;
     }
     &__arrow {
       display: none;
@@ -72,6 +75,16 @@
 
 @media screen and (max-width: 830px) {
   .hero {
+    // margin-top: -80px;
+    &__container {
+      // padding-top: 80px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+    }
+    &__content {
+      // height: 100%;
+    }
     &__title {
       font-size: 25px;
       line-height: 25px;
@@ -80,10 +93,32 @@
       font-size: 14px;
     }
     &__container-face {
-      position: unset;
-      top: 0;
-      right: 0;
+      // position: unset;
+      // top: 0;
+      // right: 0;
       margin-bottom: 25px;
+    }
+    &__wrap {
+      &-bottom {
+        // align-items: center;
+      }
+    }
+    &__portfolio {
+      font-size: 16px;
+      padding: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .hero {
+    &__container {
+      padding-top: 80px;
+      &-face {
+        position: unset;
+        right: unset;
+        top: unset;
+      }
     }
     &__wrap {
       &-bottom {
@@ -109,6 +144,39 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+    &__portfolio {
+      font-size: 15px;
+      padding: 13px;
+    }
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .hero {
+    height: unset;
+    &__container {
+      display: block;
+      padding-top: 115px;
+    }
+    &__title {
+      font-size: 20px;
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      font-size: 13px;
+      max-width: 240px;
+      margin: auto;
+    }
+    &__wrap-text {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__portfolio {
+      font-size: 15px;
+      padding: 13px;
     }
   }
 }
