@@ -666,13 +666,13 @@ a {
 .about {
   width: 100%;
   max-width: 100%;
-}
-.about__content-about {
-  display: inline-block;
   background-color: #7510F7;
 }
-.about__content-tech {
+.about__left {
+  margin-top: 60px;
   display: inline-block;
+  margin-left: 8.33%;
+  background-color: #7510F7;
 }
 .about__title {
   font-style: normal;
@@ -695,6 +695,52 @@ a {
   color: #7510F7;
   background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 193, 7, 0.9) 100%);
   border-radius: 40px;
+}
+.about__skills {
+  text-align: center;
+  padding: 60px 50px;
+  background: linear-gradient(0deg, rgba(159, 47, 255, 0.09), rgba(159, 47, 255, 0.09)), #fff;
+  display: inline-block;
+}
+.about__frontend-svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+.about__frontend-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.about__frontend-subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #717171;
+  max-width: 357px;
+  margin-bottom: 20px;
+}
+.about__skills-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7510F7;
+}
+.about__skills-title--margin {
+  margin-bottom: 10px;
+}
+.about__skills-subtitle {
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 14px;
+  color: #000;
+}
+.about__wrap--margin {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
