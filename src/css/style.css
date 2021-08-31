@@ -667,16 +667,19 @@ a {
   width: 100%;
   max-width: 100%;
   padding-top: 25px;
-  padding-bottom: 55px;
   background-color: #7510F7;
 }
 .about__container {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .about__left {
-  display: inline-block;
   margin-left: 8.33%;
   background-color: #7510F7;
+  padding-right: 25px;
 }
 .about__title {
   font-style: normal;
@@ -702,13 +705,10 @@ a {
 }
 .about__skills {
   clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 12%, -20% 10%);
-  position: absolute;
-  top: -94px;
-  right: 0;
+  margin-top: -94px;
   text-align: center;
   padding: 60px 50px;
   background: linear-gradient(0deg, rgba(159, 47, 255, 0.09), rgba(159, 47, 255, 0.09)), #fff;
-  display: inline-block;
 }
 .about__frontend-svg {
   width: 60px;
@@ -878,5 +878,47 @@ a {
   .hero__portfolio {
     font-size: 15px;
     padding: 13px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .about__container {
+    max-width: 1256px;
+    width: 83.34%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+  }
+  .about__left {
+    margin-left: unset;
+    padding-right: unset;
+    margin-bottom: 170px;
+    text-align: center;
+  }
+  .about__skills {
+    clip-path: none;
+    clip-path: unset;
+    padding: 25px;
+    border-radius: 60px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .about__title {
+    font-size: 24px;
+  }
+  .about__description {
+    font-size: 14px;
+    max-width: 485px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-wave {
+    display: none;
+    visibility: hidden;
   }
 }

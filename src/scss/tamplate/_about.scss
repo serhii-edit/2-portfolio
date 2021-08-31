@@ -2,17 +2,23 @@
   width: 100%;
   max-width: 100%;
   padding-top: 25px;
-  padding-bottom: 55px;
+  // padding-bottom: 55px;
+  // height: 330px;
   background-color: $primary2;
   &__container {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   &__left {
     // position: absolute;
     // top: 60px;
-    display: inline-block;
+    // display: inline-block;
     margin-left: $container-side;
     background-color: $primary2;
+    padding-right: 25px;
   }
   &__title {
     font-style: normal;
@@ -38,14 +44,10 @@
   }
   &__skills {
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 12%, -20% 10%);
-    position: absolute;
-    top: -94px;
-    right: 0;
+    margin-top: -94px;
     text-align: center;
     padding: 60px 50px;
     background: linear-gradient(0deg, rgba(159, 47, 255, 0.09), rgba(159, 47, 255, 0.09)), $white;
-    display: inline-block;
-    // float: right;
   }
   &__frontend {
     &-svg {

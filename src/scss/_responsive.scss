@@ -182,3 +182,54 @@
 }
 
 // Hero (END)
+
+
+// About (START)
+@media screen and (max-width: 740px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    &__container {
+
+      // grid settings from .container (independed)
+      max-width: 1256px;
+      width: 83.34%;
+      margin-left: auto;
+      margin-right: auto;
+
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+    }
+    &__left {
+      margin-left: unset;
+      padding-right: unset;
+      margin-bottom: 170px;
+      text-align: center;
+    }
+    &__skills {
+      clip-path: none;
+      clip-path: unset;
+      padding: 25px;
+      border-radius: 60px;
+      background: rgba($white, 0.8);
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__description {
+      font-size: 14px;
+      max-width: 485px;
+      margin-bottom: 35px;
+    }
+  } // .about
+} // Media (740px)
+
+@media screen and (max-width: 400px) {
+  .hero-wave {
+    display: none;
+    visibility: hidden;
+  }
+} // Media (width: 400px)
+
+// About (END)
