@@ -232,4 +232,10 @@
   }
 } // Media (width: 400px)
 
+@media screen and (max-width: 1480px) {
+  .about__skills {
+    margin-top: -93px;
+  }
+}
+
 // About (END)

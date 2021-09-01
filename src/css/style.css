@@ -751,6 +751,72 @@ a {
   margin-bottom: 20px;
 }
 
+.types {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.types__wrap-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.types__header-title {
+  display: inline-block;
+  background-color: #7510F7;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 7px;
+}
+.types__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.types__block {
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 20px 65px;
+  text-align: center;
+}
+.types__top-shape {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 260px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  clip-path: polygon(100% 0, 100% 14%, 0 29%, 0 0);
+  z-index: 1;
+}
+.types__top-shape--basic {
+  background: rgba(229, 229, 229, 0.55);
+}
+.types__top-shape--standard {
+  background: rgba(117, 16, 247, 0.8);
+}
+.types__top-shape--advanced {
+  background: rgba(255, 199, 0, 0.8);
+}
+.types__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+.types__subtitle {
+  white-space: pre-line;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
 @media screen and (max-width: 992px) {
   .header__container-list {
     display: none;
@@ -920,5 +986,10 @@ a {
   .hero-wave {
     display: none;
     visibility: hidden;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .about__skills {
+    margin-top: -93px;
   }
 }
