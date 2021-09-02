@@ -239,3 +239,38 @@
 }
 
 // About (END)
+
+
+// Types (START)
+@media screen and (max-width: 1266px) {
+  .types {
+    &__block {
+      // max-width: 250px;
+      width: unset;
+      max-width: 31%
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .types {
+    &__wrap-title {
+      margin-bottom: 75px;
+    }
+    &__content {
+      flex-direction: column;
+      justify-content: unset;
+  
+      align-items: center;
+    }
+    &__block + &__block {
+      margin-top: 50px;
+    }
+    &__block {
+      // max-width: unset;
+      width: 100%;
+      max-width: 328px;
+    }
+  }
+}
+// Types (END)
