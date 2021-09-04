@@ -379,7 +379,7 @@ a {
 }
 
 .scroll-down {
-  color: #717171;
+  color: #E5E5E58C;
   text-decoration: none;
   font-size: 14px;
 }
@@ -888,6 +888,7 @@ a {
 .portfolio__header {
   text-align: center;
   color: #000;
+  margin-bottom: 30px;
 }
 .portfolio__header-title {
   margin-bottom: 20px;
@@ -902,10 +903,10 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .portfolio__header-direction {
-  color: #717171;
+  color: #B9B9BE;
 }
 .portfolio__header-line {
   width: 75px;
@@ -913,6 +914,47 @@ a {
   background-color: #7510F7;
   margin-left: auto;
   margin-right: auto;
+}
+.portfolio__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+.portfolio__row + .portfolio__row {
+  margin-top: 30px;
+}
+.portfolio__card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 30px;
+  max-width: 370px;
+  background: rgba(89, 62, 255, 0.5);
+  text-align: center;
+  height: 300px;
+  border-radius: 30px;
+}
+.portfolio__card-title {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.portfolio__card-subtitle {
+  font-size: 14px;
+  color: #fff;
+}
+.portfolio__card-type {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio__card-github-icon {
+  width: 55px;
 }
 
 @media screen and (max-width: 992px) {

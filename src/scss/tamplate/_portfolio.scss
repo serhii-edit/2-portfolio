@@ -4,6 +4,7 @@
   &__header {
     text-align: center;
     color: $black;
+    margin-bottom: 30px;
     &-title {
       margin-bottom: 20px;
 
@@ -31,7 +32,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     } 
     &-direction {
       color: $x3SoftSilver;
@@ -44,5 +45,58 @@
       margin-right: auto;
     }
   } // Header
+
+  &__content {
+  
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    & + & {
+      margin-top: 30px;
+    }
+  }
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    padding: 20px 30px;
+    max-width: 370px;
+    background: rgba($primary, 0.50);
+    text-align: center;
+    height: 300px;
+
+    border-radius: 30px;
+    & + & {
+      // margin-left: 30px;
+    }
+    &-title {
+      color: $white;
+      margin-bottom: 10px; // out margin
+      font-size: 25px;
+    }
+    &-subtitle {
+      font-size: 14px;
+      color: $white;
+    }
+    &-type {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-github {
+
+      &-icon {
+        width: 55px;
+      }
+    }
+  } // card
 
 } // Portfolio
