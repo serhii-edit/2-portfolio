@@ -4,6 +4,7 @@ $primary2: #7510F7;
 $darkSilver: #4B4B4B;
 $softSilver: #717171;
 $x2SoftSilver: #E5E5E58C;
+$x3SoftSilver: #B9B9BE;
 $white: #fff;
 $green: #00C773;
 $blue: #2196F3;
@@ -15,7 +16,7 @@ a {
 }
 
 .scroll-down {
-  color: $softSilver;
+  color: $x2softSilver;
   text-decoration: none;
   font-size: 14px;
   &:hover {
