@@ -274,3 +274,20 @@
   }
 }
 // Types (END)
+
+
+// Portfolio (START)
+@media screen and (max-width: 992px) {
+  .portfolio {
+    &__row {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: center;
+    }
+    &__card {
+      margin-left: unset !important;
+      margin-top: 30px;
+    }
+  }
+}
+// Portfolio (END)
