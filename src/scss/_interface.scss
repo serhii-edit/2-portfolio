@@ -10,6 +10,7 @@ $white: #fff;
 $green: #00C773;
 $blue: #2196F3;
 $primaryOrange: #FFC700CC;
+$red: #FF2400;
 
 a {
   text-decoration: unset;
@@ -26,19 +27,15 @@ a {
 }
 
 .container {
-  border: 1px dashed $green;
+  // border: 1px dashed $green;
 }
-
-body .modal {
-  &-wrap {
-      position: fixed;
-      height: 100vh;
-      overflow-y: hidden;
-}
-}
+ 
 
 .modal {
+  display: none;
   &-wrap {
+    display: none;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -50,5 +47,19 @@ body .modal {
     
     background: rgba(0, 0, 0, 0.75);
     z-index: 2;
+  }
+  &__btn {
+    &-exit {
+      font-size: 33px;
+
+      color: $white;
+      border: unset;
+      background-color: unset;
+      transition: all 500ms;
+      &:hover {
+        cursor: pointer;
+        color: $red;
+      }
+    }
   }
 }

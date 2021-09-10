@@ -147,4 +147,25 @@
       color: $white;
     }
   }
+  &__modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-photo {
+
+    }
+    &-about {
+      margin-left: 50px;
+    }
+  }
+  &__btn-exit {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+  }
 } // Portfolio
