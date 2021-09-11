@@ -27,14 +27,12 @@ a {
 }
 
 .container {
-  // border: 1px dashed $green;
+  border: 1px dashed $green;
 }
  
 
 .modal {
-  display: none;
   &-wrap {
-    display: none;
 
     position: fixed;
     top: 0;

@@ -380,7 +380,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 100px;
   border: 4px solid transparent;
   background-clip: content-box;
-  transition: all 500ms;
 }
 
 /* Handle on hover */
@@ -418,11 +417,11 @@ a {
   color: #000;
 }
 
-.modal {
-  display: none;
+.container {
+  border: 1px dashed #00C773;
 }
+
 .modal-wrap {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1049,23 +1048,104 @@ a {
   -webkit-text-fill-color: #fff;
   color: #fff;
 }
-.portfolio__modal {
+.portfolio__modal-wrap {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .portfolio__modal-content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-}
-.portfolio__modal-about {
-  margin-left: 50px;
+  align-items: flex-start;
 }
 .portfolio__btn-exit {
   position: absolute;
   top: 30px;
   right: 35px;
+}
+.portfolio__wrap-about {
+  margin-left: 50px;
+  color: #fff;
+}
+.portfolio__block-photo {
+  max-width: 600px;
+  max-height: 270px;
+  overflow-y: scroll;
+  direction: rtl;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.portfolio__block-photo::-webkit-scrollbar {
+  width: 16px;
+  background: transparent;
+}
+.portfolio__block-photo::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border: 4px solid transparent;
+  background-clip: content-box;
+  border-radius: 100px;
+}
+.portfolio__block-photo::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+.portfolio__block-photo::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to right bottom, #0fb06d, #00b39e, #00b3c7, #00afe1, #4da7ea);
+}
+.portfolio__photo {
+  width: 100%;
+}
+.portfolio__modal-title {
+  font-size: 21px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.portfolio__modal-subtitle {
+  max-width: 510px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio__modal-term-price {
+  display: block;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.portfolio__modal-btn {
+  display: inline-block;
+  background: linear-gradient(95deg, #7510F7 0%, #00C773 99.3%);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 25px;
+  transition: all 500ms;
+}
+.portfolio__modal-btn:hover {
+  background: #fff;
+  color: #000;
+}
+.portfolio__modal-project {
+  display: inline-block;
+  width: 40px;
+  vertical-align: middle;
+}
+.portfolio__modal-project-icon {
+  border-radius: 102%;
+  width: 100%;
+  background-color: #fff;
+  transition: all 500ms;
+}
+.portfolio__modal-project-icon:hover {
+  background-color: #00C773;
 }
 
 @media screen and (max-width: 992px) {
