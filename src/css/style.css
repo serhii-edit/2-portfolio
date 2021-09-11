@@ -1145,7 +1145,7 @@ a {
   transition: all 500ms;
 }
 .portfolio__modal-project-icon:hover {
-  background-color: #00C773;
+  background-color: #FFC700CC;
 }
 
 @media screen and (max-width: 992px) {

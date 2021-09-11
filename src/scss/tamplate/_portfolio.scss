@@ -260,9 +260,9 @@
         background-color: $white;
         transition: all 500ms;
         &:hover {
-          background-color: #00C773;
+          background-color: $primaryOrange;
         }
       }
-    }
-  }
+    } // project
+  } // modal
 } // Portfolio
