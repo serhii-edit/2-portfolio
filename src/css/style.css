@@ -417,10 +417,6 @@ a {
   color: #000;
 }
 
-.container {
-  border: 1px dashed #00C773;
-}
-
 .modal-wrap {
   position: fixed;
   top: 0;
@@ -430,7 +426,7 @@ a {
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 2;
 }
 .modal__btn-exit {
@@ -1048,9 +1044,12 @@ a {
   -webkit-text-fill-color: #fff;
   color: #fff;
 }
+.portfolio__modal {
+  margin-top: 30px;
+}
 .portfolio__modal-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .portfolio__modal-content {
   display: flex;
@@ -1159,9 +1158,17 @@ a {
 }
 .portfolio__list-wrap {
   display: inline-block;
+  border-radius: 15px;
   list-style: none;
   max-width: 220px;
-  background: rgba(125, 125, 125, 0.5);
+  background-color: rgba(89, 62, 255, 0.5);
+  transition: all 500ms;
+}
+.portfolio__list-wrap:hover {
+  background-color: rgba(0, 199, 115, 0.5);
+}
+.portfolio__list-wrap:nth-of-type(1n+2) {
+  margin-left: 15px;
 }
 .portfolio__list-block {
   position: relative;
@@ -1177,6 +1184,7 @@ a {
   max-height: 0px;
   overflow: hidden;
   transition: all 500ms;
+  text-align: center;
 }
 .portfolio__list-indicator {
   display: inline-block;
@@ -1188,7 +1196,7 @@ a {
 .portfolio__wrap-2-content {
   padding-top: 5px;
   margin-top: 5px;
-  border-top: 1.5px solid #7D7D7D;
+  border-top: 1.5px solid #fff;
 }
 .portfolio__item {
   font-size: 15px;

@@ -27,7 +27,7 @@ a {
 }
 
 .container {
-  border: 1px dashed $green;
+  // border: 1px dashed $green;
 }
  
 
@@ -43,7 +43,7 @@ a {
     height: 100vh;
     overflow-y: hidden;
     
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 2;
   }
   &__btn {
