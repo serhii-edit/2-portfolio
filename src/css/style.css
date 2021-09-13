@@ -387,6 +387,12 @@ body::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(to right bottom, #0fb06d, #00b39e, #00b3c7, #00afe1, #4da7ea);
 }
 
+.modal {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .container {
   display: block;
   max-width: 1256px;
@@ -417,7 +423,7 @@ a {
   color: #000;
 }
 
-.modal-wrap {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -438,7 +444,6 @@ a {
 }
 .modal__btn-exit:hover {
   cursor: pointer;
-  color: #FF2400;
 }
 
 .header {
@@ -983,9 +988,9 @@ a {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  color: #fff;
   padding: 20px 30px;
   max-width: 370px;
+  color: #fff;
   background-image: linear-gradient(122.72deg, #000000 2.09%, #5E5E5E 97.55%);
   border-radius: 25px;
   text-align: center;
@@ -1009,7 +1014,6 @@ a {
   font-size: 14px;
 }
 .portfolio__card-type {
-  content: "MoreS";
   position: absolute;
   bottom: 20px;
   left: 0;
@@ -1045,11 +1049,11 @@ a {
   color: #fff;
 }
 .portfolio__modal {
-  margin-top: 30px;
-}
-.portfolio__modal-wrap {
   display: flex;
   align-items: flex-start;
+}
+.portfolio__modal-dialog {
+  margin-top: 30px;
 }
 .portfolio__modal-content {
   display: flex;
@@ -1057,10 +1061,21 @@ a {
   justify-content: center;
   align-items: flex-start;
 }
+.portfolio-1 {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
 .portfolio__btn-exit {
   position: absolute;
   top: 30px;
   right: 35px;
+  border-radius: 100%;
+  padding: 5px 13px;
+  background-color: rgba(113, 113, 113, 0.5);
+}
+.portfolio__btn-exit:hover {
+  background-color: rgba(255, 36, 0, 0.5);
 }
 .portfolio__wrap-about {
   margin-left: 50px;

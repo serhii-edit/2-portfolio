@@ -51,3 +51,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 // ScrollBar (END)
 
+.modal {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+// .portfolio__modal-wrap {
+//   display: none !important;
+// }
