@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+  var body = document.querySelector("body");
+
+  function bodyHidden() {
+    body.style.overflow = 'hidden';
+  }
+  function bodyAuto() {
+    body.style.overflow = 'visible';
+  }
+
   // Portfolio modals (START)
   var modal_1 = document.getElementById("modal_1");
   var modal_2 = document.getElementById("modal_2");
@@ -18,30 +27,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var btnCard_6 = document.getElementById("card_6");
   // btn cards Portfolio modals (END)
 
-  // X Exit
-  var modalCloseWork = document.getElementsByClassName("modalClosePortfolio");
+  // Portfolio Btn Exit (for each modal different variable) same class
+  var CaseCloseBtn0 = document.getElementsByClassName('CaseCloseBtn')[0];
+  var CaseCloseBtn1 = document.getElementsByClassName('CaseCloseBtn')[1];
+  var CaseCloseBtn2 = document.getElementsByClassName('CaseCloseBtn')[2];
+  var CaseCloseBtn3 = document.getElementsByClassName('CaseCloseBtn')[3];
+  var CaseCloseBtn4 = document.getElementsByClassName('CaseCloseBtn')[4];
+  var CaseCloseBtn5 = document.getElementsByClassName('CaseCloseBtn')[5];
 
-// btn Portfolio modals (START)
+// BTN open Portfolio modals (START)
   btnCard_1.onclick = function () {
     modal_1.classList.add("showPortfolioModal");
+    bodyHidden();
   } 
   btnCard_2.onclick = function () {
     modal_2.classList.add("showPortfolioModal");
+    bodyHidden();
   } 
   btnCard_3.onclick = function () {
     modal_3.classList.add("showPortfolioModal");
+    bodyHidden();
   } 
   btnCard_4.onclick = function () {
     modal_4.classList.add("showPortfolioModal");
+    bodyHidden();
   } 
   btnCard_5.onclick = function () {
     modal_5.classList.add("showPortfolioModal");
+    bodyHidden();
   } 
   btnCard_6.onclick = function () {
     modal_6.classList.add("showPortfolioModal");
+    bodyHidden();
   } 
 // btn Portfolio modals (END)
 
+// Portfolio main close function (for all modal) same class
 function closeModalPort() {
   modal_1.classList.remove("showPortfolioModal"),
   modal_2.classList.remove("showPortfolioModal");
@@ -49,9 +70,26 @@ function closeModalPort() {
   modal_4.classList.remove("showPortfolioModal");
   modal_5.classList.remove("showPortfolioModal");
   modal_6.classList.remove("showPortfolioModal");
+  bodyAuto();
 }
 
-  modalCloseWork.onclick = function () {
+// Portfolio for each modal (BTN Exit)
+  CaseCloseBtn0.onclick = function () {
+    closeModalPort();
+  }
+  CaseCloseBtn1.onclick = function () {
+    closeModalPort();
+  }
+  CaseCloseBtn2.onclick = function () {
+    closeModalPort();
+  }
+  CaseCloseBtn3.onclick = function () {
+    closeModalPort();
+  }
+  CaseCloseBtn4.onclick = function () {
+    closeModalPort();
+  }
+  CaseCloseBtn5.onclick = function () {
     closeModalPort();
   }
 
@@ -94,6 +132,6 @@ function closeModalPort() {
       closeModalPort();
     }
   });
-  
+  // Done Portfolio modal 
 
 });
