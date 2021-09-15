@@ -1235,6 +1235,12 @@ a {
   transform: rotate(90deg);
 }
 
+.showPortfolioModal {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
 @media screen and (max-width: 992px) {
   .header__container-list {
     display: none;
