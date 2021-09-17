@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
   var body = document.querySelector("body");
+  var main = document.querySelector("main");
 
   function bodyHidden() {
     body.style.overflow = 'hidden';
+
   }
   function bodyAuto() {
     body.style.overflow = 'visible';
@@ -133,5 +135,20 @@ function closeModalPort() {
     }
   });
   // Done Portfolio modal 
+
+  // IOS Disable scroll for Modal (START)
+  // body.addEventListener('touchforcechange', body.preventDefault, {passive: false});
+
+  // body.addEventListener('touchmove', function(e) {
+  //   e.preventDefault();
+  // });
+
+  // modal_1.addEventListener('touchforcechange', body.preventDefault, {passive: false});
+
+  // modal_1.addEventListener('touchmove', function(e) {
+  //   e.preventDefault();
+  // });
+
+  // IOS Disable scroll for Modal (END)
 
 });
