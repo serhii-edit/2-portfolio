@@ -60,3 +60,38 @@ body::-webkit-scrollbar-thumb:hover {
 // .portfolio__modal-wrap {
 //   display: none !important;
 // }
+
+
+// All website
+// ScrollBar (START)
+/* width */
+.modal::-webkit-scrollbar {
+  width: 16px;
+  background: transparent;
+}
+
+/* Track */
+.modal::-webkit-scrollbar-track {
+  background: rgba(#717171, 0.20);
+
+  border: 4px solid transparent;
+  background-clip: content-box;
+
+  border-radius: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+.modal::-webkit-scrollbar-thumb {
+  background-color: rgba(#717171, 0.4);
+  border-radius: 100px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+.modal::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to right bottom, #0fb06d, #00b39e, #00b3c7, #00afe1, #4da7ea);
+}
+// ScrollBar (END)
