@@ -1,6 +1,7 @@
 .header {
   width: 100%;
   position: relative;
+  z-index: 2;
   &__container {
     position: relative;
   }
@@ -73,7 +74,7 @@
       text-decoration: none;
       text-transform: uppercase;
       box-shadow: 0px 25px 20px -20px; 
-      transition: all 200ms; 
+      transition-duration: 200ms; 
       &:hover {
         color: $primary;
         box-shadow: rgba($primary, 1);
@@ -91,9 +92,6 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 2;
-
-    // background-color: rgba($primary, 0.1);
 
     box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 49%);
     -webkit-box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 49%);
@@ -111,16 +109,47 @@
       &:checked {
         & ~ .header__mobile {
           &-nav {
-            top: 0;
-            right: 0;
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            
+            max-width: auto;
+            width: auto;
+            transform: translateX(0%) translateY(0%);
+
             & > .header__mobile-item {
-              color: $mobileMenuColor;
-              opacity: 1;
+              color: $white;
               transform: scale(1);
-              transition: 500ms, opacity 0.1s;
             } // item
             right: 0;
           } // nav
+          &-wrap-btn {
+            margin-right: 10px;
+            &:hover {
+              // box-shadow: 0 0 10px -1px transparent, inset 0 0 50px 1px $x3SoftSilver;
+              box-shadow: unset;
+              background-color: $white;
+              & > .header__mobile-btn {
+                &:before, &:after {
+                  background-color: $mobileMenuColor; 
+                }
+              }
+            }
+          & > .header__mobile-btn {
+            background-color: transparent;
+            &:before, &:after {
+              background-color: $white;
+            }
+            &:before {
+              transform: rotate(45deg);
+              top: unset;
+            }
+            &:after {
+              transform: rotate(-45deg);
+              bottom: unset;
+            }
+          }
+          }
         } // header__mobile
 
       } // checked
@@ -135,8 +164,9 @@
       margin-top: 5px;
       box-shadow: 0 0 0 -5px transparent, inset 0 0 0 -5px transparent;
       float: right;
+      z-index: 1;
 
-      transition: all 500ms;
+      transition-duration: 500ms;
       &:hover {
         box-shadow: 0 0 0 -1px transparent, inset 0 0 0 30px rgba($mobileMenuColor, 0.9);
         cursor: pointer;
@@ -157,7 +187,7 @@
       border-radius: 5px;
       background-color: $mobileMenuColor;
       // border: none;
-      transition: all 500ms;
+      transition-duration: 500ms;
       &:before, &:after {
         position: absolute;
         content: '';
@@ -166,7 +196,7 @@
         height: 3.5px;
         background-color: $mobileMenuColor;
         border-radius: 5px;
-        transition: 500ms;
+        transition-duration: 500ms;
       }
       &:before {
         top: -8px;
@@ -177,21 +207,43 @@
     }
     &-nav {
       position: absolute;
-      display: block;
-      top: -100%;
-      right: -100%;
+      top: -2px;
+      right: 0;
 
-      transition: 90ms;
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+
+      text-align: right;
+      padding: 70px 10px 70px 70px;
+
+      background-color: rgba($mobileMenuColor, 1);
+      z-index: -1;
+      border-bottom-left-radius: 100%;
+      transform: translateX(100%) translateY(-100%);
+
+      transition: all 1ms;
+      color: $white;
     }
     &-item {
-      position: relative;
-      display: block;
-      text-align: right;
+      display: inline-block;
+      transform: scale(0.1);
+
+      font-size: 16px;
+      font-weight: 400;
       color: transparent;
-      font-size: 14px;
       text-transform: uppercase;
-      transform: scale(0.2);
-      transition: 500ms, opacity 1s;
+
+      padding: 5px;
+
+      transition-duration: 350ms;
+      & + & {
+        margin-top: 5px;
+      }
+      &:hover {
+        background-color: $white;
+        color: $mobileMenuColor !important;
+      }
     }
   } // Mobile
 

@@ -478,6 +478,7 @@ a {
 .header {
   width: 100%;
   position: relative;
+  z-index: 2;
 }
 .header__container {
   position: relative;
@@ -540,7 +541,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0px 25px 20px -20px;
-  transition: all 200ms;
+  transition-duration: 200ms;
 }
 .header__nav-button:hover {
   color: #593EFF;
@@ -555,7 +556,6 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 2;
   box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.49);
   -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.49);
   -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.49);
@@ -569,15 +569,41 @@ a {
   opacity: 0;
 }
 .header__mobile-checkbox:checked ~ .header__mobile-nav {
-  top: 0;
-  right: 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  max-width: auto;
+  width: auto;
+  transform: translateX(0%) translateY(0%);
   right: 0;
 }
 .header__mobile-checkbox:checked ~ .header__mobile-nav > .header__mobile-item {
-  color: #EC7263;
-  opacity: 1;
+  color: #fff;
   transform: scale(1);
-  transition: 500ms, opacity 0.1s;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn {
+  margin-right: 10px;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn:hover {
+  box-shadow: unset;
+  background-color: #fff;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn:hover > .header__mobile-btn:before, .header__mobile-checkbox:checked ~ .header__mobile-wrap-btn:hover > .header__mobile-btn:after {
+  background-color: #EC7263;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn > .header__mobile-btn {
+  background-color: transparent;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn > .header__mobile-btn:before, .header__mobile-checkbox:checked ~ .header__mobile-wrap-btn > .header__mobile-btn:after {
+  background-color: #fff;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn > .header__mobile-btn:before {
+  transform: rotate(45deg);
+  top: unset;
+}
+.header__mobile-checkbox:checked ~ .header__mobile-wrap-btn > .header__mobile-btn:after {
+  transform: rotate(-45deg);
+  bottom: unset;
 }
 .header__mobile-wrap-btn {
   display: inline-block;
@@ -588,7 +614,8 @@ a {
   margin-top: 5px;
   box-shadow: 0 0 0 -5px transparent, inset 0 0 0 -5px transparent;
   float: right;
-  transition: all 500ms;
+  z-index: 1;
+  transition-duration: 500ms;
 }
 .header__mobile-wrap-btn:hover {
   box-shadow: 0 0 0 -1px transparent, inset 0 0 0 30px rgba(236, 114, 99, 0.9);
@@ -607,7 +634,7 @@ a {
   height: 3px;
   border-radius: 5px;
   background-color: #EC7263;
-  transition: all 500ms;
+  transition-duration: 500ms;
 }
 .header__mobile-btn:before, .header__mobile-btn:after {
   position: absolute;
@@ -617,7 +644,7 @@ a {
   height: 3.5px;
   background-color: #EC7263;
   border-radius: 5px;
-  transition: 500ms;
+  transition-duration: 500ms;
 }
 .header__mobile-btn:before {
   top: -8px;
@@ -627,20 +654,36 @@ a {
 }
 .header__mobile-nav {
   position: absolute;
-  display: block;
-  top: -100%;
-  right: -100%;
-  transition: 90ms;
+  top: -2px;
+  right: 0;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  text-align: right;
+  padding: 70px 10px 70px 70px;
+  background-color: #ec7263;
+  z-index: -1;
+  border-bottom-left-radius: 100%;
+  transform: translateX(100%) translateY(-100%);
+  transition: all 1ms;
+  color: #fff;
 }
 .header__mobile-item {
-  position: relative;
-  display: block;
-  text-align: right;
+  display: inline-block;
+  transform: scale(0.1);
+  font-size: 16px;
+  font-weight: 400;
   color: transparent;
-  font-size: 14px;
   text-transform: uppercase;
-  transform: scale(0.2);
-  transition: 500ms, opacity 1s;
+  padding: 5px;
+  transition-duration: 350ms;
+}
+.header__mobile-item + .header__mobile-item {
+  margin-top: 5px;
+}
+.header__mobile-item:hover {
+  background-color: #fff;
+  color: #EC7263 !important;
 }
 
 .hero {
