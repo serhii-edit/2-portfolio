@@ -151,4 +151,24 @@ function closeModalPort() {
 
   // IOS Disable scroll for Modal (END)
 
+
+  var featreSwiper = new Swiper('.feature__swiper', {
+    
+    direction: 'horizontal',
+    wrapperClass: "feature__wrapper",
+
+    // loop: true,
+    slideClass: "feature__slide",
+    slideActiveClass: "feature__slide-active",
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+
 });

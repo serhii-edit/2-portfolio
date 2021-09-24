@@ -1,5 +1,8 @@
 // Header (START)
 @media screen and (max-width: 992px) {
+  html:hover, body:hover {
+    
+  }
   .header {
     &__container-list { // Temporary until Burger will done
       display: none;

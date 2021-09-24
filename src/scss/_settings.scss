@@ -94,4 +94,8 @@ body::-webkit-scrollbar-thumb:hover {
 .modal::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(to right bottom, #0fb06d, #00b39e, #00b3c7, #00afe1, #4da7ea);
 }
+
+.swiper {
+  overflow: hidden;
+}
 // ScrollBar (END)
