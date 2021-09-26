@@ -21,7 +21,8 @@
   &__swiper {
     overflow: hidden;
     max-width: 1030px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+    padding-bottom: 35px !important;
   }
   &__wrapper {
     width: 100%;
@@ -162,6 +163,32 @@
       text-overflow: ellipsis;
       &:active {
         transform: scale(0.80);
+      }
+    }
+  } // type
+
+  &__pagination {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    width: auto !important;
+    transform: translateX(-50%);
+    &-bullet {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: rgba($black, 0.2);
+      border-radius: 100%;
+      margin-left: 4px;
+      margin-right: 4px;
+
+      cursor: pointer;
+      transition: 350ms;
+      &:hover {
+        transform: scale(1.1);
+      }
+      &-active {
+        background-color: rgba($blueFeature, 0.9);
       }
     }
   }

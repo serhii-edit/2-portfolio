@@ -165,8 +165,15 @@ function closeModalPort() {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.feature__button-next',
+      prevEl: '.feature__button-prev',
+    },
+
+    pagination: {
+      el: '.feature__pagination',
+      type: 'bullets',
+      bulletClass: "feature__pagination-bullet",
+      bulletActiveClass: "feature__pagination-bullet-active",
     },
 
   });
