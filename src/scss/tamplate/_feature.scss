@@ -31,7 +31,7 @@
     cursor: pointer;
   }
   &__slide {
-    border: 1px solid red;
+    border: 0.5px solid green;
     text-align: center;
     &-wrap {
       &-svg {
@@ -155,17 +155,50 @@
       // font-family: Arial;
       font-style: normal;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       text-align: center;
       text-transform: uppercase;
       color: $white;
       transition: transform 400ms;
       text-overflow: ellipsis;
-      &:active {
-        transform: scale(0.80);
+      &:hover {
+        transform: scale(0.90);
       }
     }
   } // type
+
+  &__button {
+    &-prev, &-next {
+      position: absolute;
+      width: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      &[disabled=true] {
+        opacity: 0.5;
+      }
+      & > svg {
+        // fill: #593EFF;
+        fill: $white;
+        border-radius: 100%;
+        padding: 6px;
+        background-color: rgba($blueFeature, 0.5);
+        transition: all 350ms;
+      }
+      &:hover {
+        svg {
+          background-color: rgba($blueFeature, 0.8);
+        }
+        cursor: pointer;
+      }
+    }
+    &-prev {
+      left: 0;
+    }
+    &-next { 
+      right: 0;
+    }
+  }
 
   &__pagination {
     position: absolute !important;

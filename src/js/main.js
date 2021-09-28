@@ -174,6 +174,7 @@ function closeModalPort() {
       type: 'bullets',
       bulletClass: "feature__pagination-bullet",
       bulletActiveClass: "feature__pagination-bullet-active",
+      clickable: true,
     },
 
   });

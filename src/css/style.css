@@ -1405,7 +1405,7 @@ a {
   cursor: pointer;
 }
 .feature__slide {
-  border: 1px solid red;
+  border: 0.5px solid green;
   text-align: center;
 }
 .feature__slide-wrap-svg {
@@ -1504,15 +1504,44 @@ a {
   border-radius: 35px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
   transition: transform 400ms;
   text-overflow: ellipsis;
 }
-.feature__type-btn:active {
-  transform: scale(0.8);
+.feature__type-btn:hover {
+  transform: scale(0.9);
+}
+.feature__button-prev, .feature__button-next {
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.feature__button-prev[disabled=true], .feature__button-next[disabled=true] {
+  opacity: 0.5;
+}
+.feature__button-prev > svg, .feature__button-next > svg {
+  fill: #fff;
+  border-radius: 100%;
+  padding: 6px;
+  background-color: rgba(0, 109, 240, 0.5);
+  transition: all 350ms;
+}
+.feature__button-prev:hover, .feature__button-next:hover {
+  cursor: pointer;
+}
+.feature__button-prev:hover svg, .feature__button-next:hover svg {
+  background-color: rgba(0, 109, 240, 0.8);
+}
+.feature__button-prev {
+  left: 0;
+}
+.feature__button-next {
+  right: 0;
 }
 .feature__pagination {
   position: absolute !important;
