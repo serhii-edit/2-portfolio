@@ -1,8 +1,5 @@
 // Header (START)
 @media screen and (max-width: 992px) {
-  html:hover, body:hover {
-    
-  }
   .header {
     &__container-list { // Temporary until Burger will done
       display: none;
@@ -384,3 +381,62 @@
   }
 }
 // Portfolio (END)
+
+// Feature (START)
+@media screen and (max-width: 992px) {
+  .feature {
+    &__swiper {
+      max-width: 410px !important;
+    }
+    &__button {
+      &-next, &-prev {
+        width: 40px;
+      }
+    }
+    &__type {
+      &-text {
+        display: block;
+        margin-bottom: 15px;
+      }
+      &-btn {
+        display: block;
+        max-width: 165px;
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .feature {
+    &__type {
+      &-text {
+        max-width: 395px;
+        padding: 5px 8px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .feature {
+    &__swiper {
+      max-width: 285px !important;
+      padding-right: unset !important;
+      padding-left: unset !important;
+      padding-bottom: 60px !important;
+    }
+    &__button {
+      &-next, &-prev {
+        width: 30px;
+        top: unset;
+        transform: translateY(0);
+        bottom: 0;
+      }
+      &-next {
+        right: 13px;
+      }
+    }
+  }
+}

@@ -162,6 +162,7 @@ function closeModalPort() {
     slideActiveClass: "feature__slide-active",
     slidesPerView: 3,
     slidesPerGroup: 3,
+    spaceBetween: 50,
   
     // Navigation arrows
     navigation: {
@@ -176,6 +177,17 @@ function closeModalPort() {
       bulletActiveClass: "feature__pagination-bullet-active",
       clickable: true,
     },
+
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      1: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      }
+    }
 
   });
 

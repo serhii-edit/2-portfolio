@@ -1394,9 +1394,11 @@ a {
 }
 .feature__swiper {
   overflow: hidden;
-  max-width: 1030px;
   margin-bottom: 70px;
   padding-bottom: 35px !important;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+  max-width: 1100px !important;
 }
 .feature__wrapper {
   width: 100%;
@@ -1405,7 +1407,6 @@ a {
   cursor: pointer;
 }
 .feature__slide {
-  border: 0.5px solid green;
   text-align: center;
 }
 .feature__slide-wrap-svg {
@@ -1500,6 +1501,7 @@ a {
   max-width: 220px;
   margin-left: 35px;
   padding: 15px;
+  z-index: 2;
   background: linear-gradient(90deg, #9F2FFF 0%, #F44336 100%);
   border-radius: 35px;
   font-style: normal;
@@ -1516,32 +1518,29 @@ a {
 }
 .feature__button-prev, .feature__button-next {
   position: absolute;
-  width: 50px;
+  width: 45px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-}
-.feature__button-prev[disabled=true], .feature__button-next[disabled=true] {
-  opacity: 0.5;
 }
 .feature__button-prev > svg, .feature__button-next > svg {
   fill: #fff;
   border-radius: 100%;
   padding: 6px;
-  background-color: rgba(0, 109, 240, 0.5);
+  background-color: rgba(0, 109, 240, 0.4);
   transition: all 350ms;
 }
 .feature__button-prev:hover, .feature__button-next:hover {
   cursor: pointer;
 }
 .feature__button-prev:hover svg, .feature__button-next:hover svg {
-  background-color: rgba(0, 109, 240, 0.8);
+  background-color: rgba(0, 109, 240, 0.9);
 }
 .feature__button-prev {
   left: 0;
 }
 .feature__button-next {
-  right: 0;
+  right: 13px;
 }
 .feature__pagination {
   position: absolute !important;
@@ -1837,5 +1836,46 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .feature__swiper {
+    max-width: 410px !important;
+  }
+  .feature__button-next, .feature__button-prev {
+    width: 40px;
+  }
+  .feature__type-text {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .feature__type-btn {
+    display: block;
+    max-width: 165px;
+    float: right;
+  }
+}
+@media screen and (max-width: 805px) {
+  .feature__type-text {
+    max-width: 395px;
+    padding: 5px 8px;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 500px) {
+  .feature__swiper {
+    max-width: 285px !important;
+    padding-right: unset !important;
+    padding-left: unset !important;
+    padding-bottom: 60px !important;
+  }
+  .feature__button-next, .feature__button-prev {
+    width: 30px;
+    top: unset;
+    transform: translateY(0);
+    bottom: 0;
+  }
+  .feature__button-next {
+    right: 13px;
   }
 }
