@@ -402,6 +402,7 @@
         display: block;
         max-width: 165px;
         float: right;
+        margin-left: unset;
       }
     }
   }
@@ -409,7 +410,15 @@
 
 @media screen and (max-width: 805px) {
   .feature {
+    &__shape {
+      &-m {
+        top: 4%;
+        left: 30%;
+      }
+    }
     &__type {
+      position: relative;
+      z-index: 2;
       &-text {
         max-width: 395px;
         padding: 5px 8px;
@@ -436,6 +445,16 @@
       }
       &-next {
         right: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 267px) {
+  .feature {
+    &__type {
+      &-btn {
+        font-size: 13px;
       }
     }
   }
