@@ -15,6 +15,7 @@
         font-size: 18px;
       }
     }
+    margin-bottom: 50px;
   }
   &__main-image {
     &-wrap {
@@ -22,7 +23,7 @@
       top: 50%;
       left: 0;
       right: 0;
-      // transform: translateY(-50%);
+      transform: translateY(-40%);
       max-width: 417px;
       margin: auto;
     }
@@ -36,6 +37,8 @@
   }
   &__block-left, &__block-right {
     max-width: 300px;
+    z-index: 2;
+    border: 1px solid green;
   }
   &__item {
     display: flex;
@@ -73,6 +76,54 @@
       line-height: 14px;
       
       color: #5E5E5E;
+    }
+    &-offer {
+      // font-family: Barlow;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      float: right;
+      color: #4D4DFF;
+      vertical-align: middle;
+
+      border-left: 3px solid $primary;
+      border-radius: 2px;
+      padding-left: 10px;
+
+      margin-bottom: 20px;
+      // &-line {
+      //   // content: "";
+      //   display: inline-block;
+      //   width: 3px;
+      //   height: 135%;
+      //   border-radius: 15px;
+      //   margin-right: 10px;
+      //   background-color: $primary;
+      //   // float: left;
+      //   vertical-align: middle;
+      // }
+      &-type  {
+        display: block;
+      }
+      &-btn {
+        display: block;
+        float: right;
+
+        padding: 11px 14px;
+
+        // font-family: Barlow;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: $white;
+        border-radius: 20px;
+        background: linear-gradient(92.29deg, #0FB06D -3.97%, #4DA7EA 100%);
+        transition: all 350ms;
+        &:hover {
+          background: #4DA7EA;
+        }
+      }
     }
   }
 }

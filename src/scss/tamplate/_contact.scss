@@ -1,0 +1,165 @@
+.contact {
+  position: relative;
+
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  background-image: url("../img/contact-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#1E005F, 0.7);
+    z-index: -1;
+  }
+  &__header {
+    text-align: center;
+    &-title {
+      font-size: 35px;
+      text-align: center;
+      color: $white;
+      &::after {
+        content: "";
+        display: block;
+
+        width: 150px;
+        height: 4px;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $red;
+      }
+    }
+    &-subtitle {
+      display: inline-block;
+      max-width: 343px;
+
+      margin: auto;
+      margin-bottom: 30px;
+
+      font-family: Arial;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      color: $x3SoftSilver;
+
+    }
+  }
+  &__dialog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    color: $white;
+  }
+
+  &__form {
+    width: 100%; // Help make 365px max
+    max-width: 365px;
+    padding: 25px 40px;
+    background: rgba($black, 0.35);
+    &-title {
+      font-size: 20px;
+      margin-bottom: 33px;
+      &-s {
+        color: $primaryOrange;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+    } // Header Title
+
+    &-input {
+      &-block {
+        & + & {
+          margin-top: 20px;
+        }
+      }
+      width: 100%;
+      background-color: transparent;
+      border: unset;
+      border-radius: unset;
+
+      border: unset;
+      box-shadow: unset;
+      outline: unset;
+      color: $white;
+
+      border-bottom: 2px solid $x3SoftSilver;
+
+      &::placeholder {
+        color: $x3SoftSilver;
+      }
+      &:focus, &:active {
+        border-bottom: 2px solid $red;
+        // border: unset;
+        // box-shadow: unset;
+        // outline: unset;
+      }
+      &-massage {
+        // width: 100%;
+      }
+    }
+  }
+
+
+  &__addinfo {
+    width: 100%;
+    height: 100%;
+    max-width: 365px;
+    padding: 15px 35px;
+
+    background: rgba($black, 0.50);
+
+    &-header {
+      text-align: center;
+    }
+    &-title {
+      font-family: Arial;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: $white;
+      margin-bottom: 25px;
+    }
+
+    &-item {
+      & + & {
+        margin-top: 20px;
+      }
+    }
+    &-icon {
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: middle;
+    }
+    &-text {
+      display: inline-block;
+    }
+    &-type {
+      color: $x3SoftSilver;
+    }
+
+    &-address {
+      max-width: 220px;
+    }
+    &-tel {
+      color: $white;
+    }
+  }
+}
