@@ -1730,12 +1730,14 @@ a {
   justify-content: center;
   align-items: flex-start;
   color: #fff;
+  height: 440px;
 }
 .contact__form {
   width: 100%;
   max-width: 365px;
   padding: 25px 40px;
   background: rgba(0, 0, 0, 0.35);
+  height: 100%;
 }
 .contact__form-title {
   font-size: 20px;
@@ -1765,6 +1767,14 @@ a {
 }
 .contact__form-input:focus, .contact__form-input:active {
   border-bottom: 2px solid #FF2400;
+}
+.contact__form-request {
+  background-color: transparent !important;
+  padding: 4px;
+  border: 2px solid #000;
+}
+.contact__form-request-primary {
+  color: #fff !important;
 }
 .contact__addinfo {
   width: 100%;

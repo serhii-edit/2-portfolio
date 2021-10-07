@@ -65,8 +65,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-
     color: $white;
+    height: 440px;
   }
 
   &__form {
@@ -74,6 +74,7 @@
     max-width: 365px;
     padding: 25px 40px;
     background: rgba($black, 0.35);
+    height: 100%;
     &-title {
       font-size: 20px;
       margin-bottom: 33px;
@@ -114,6 +115,15 @@
       &-massage {
         // width: 100%;
       }
+    }
+    &-request {
+      background-color: transparent !important;
+      padding: 4px;
+      border: 2px solid $black;
+        &-primary {
+        color: $white !important;
+        }
+      
     }
   }
 
