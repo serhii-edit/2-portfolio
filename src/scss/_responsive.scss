@@ -549,3 +549,23 @@
 }
 }
 // Offer (END)
+
+// Footer (START)
+@media screen and (max-width: 882px) {
+  .contact {
+    &__dialog {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: unset;
+    }
+    &__form, &__addinfo {
+      height: unset;
+    }
+    &__addinfo {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+}
+// Footer (END)

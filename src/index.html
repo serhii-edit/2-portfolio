@@ -2265,7 +2265,7 @@
   </section>
   <!-- /.offer -->
 
-  <section class="contact">
+  <footer class="contact">
     <div class="container contact__container">
       <div class="contact__header">
 
@@ -2294,17 +2294,13 @@
             <!-- /.contact__form-input-block -->
             <div class="contact__form-input-block contact__form-request-block">
               <select type="text" name="userType" class="contact__form-input contact__form-request">
-                <option value="" selected disabled class="contact__form-request-primary" >Request for?</option>
-                <option value="Free Assessment">Free Assessment</option>
-                <option value="Basic">Type Basic</option>
-                <option value="Standard">Type Standard</option>
-                <option value="Advanced">Type Advanced</option>
-                <option value="Advanced">Others..</option>
+                <option value="" selected disabled class="contact__form-request-item contact__form-request-primary">Request for?</option>
+                <option class="contact__form-request-item" value="Free Assessment">Free Assessment</option>
+                <option class="contact__form-request-item" value="Basic">Type Basic</option>
+                <option class="contact__form-request-item" value="Standard">Type Standard</option>
+                <option class="contact__form-request-item" value="Advanced">Type Advanced</option>
+                <option class="contact__form-request-item" value="Advanced">Others..</option>
                 </select>
-            </div>
-            <!-- /.contact__form-input-block -->
-            <div class="contact__form-input-block">
-              <input type="text" name="userReason" placeholder="Reason of Contacting" class="contact__form-input">
             </div>
             <!-- /.contact__form-input-block -->
             <div class="contact__form-input-block">
@@ -2320,6 +2316,7 @@
             </div>
             <!-- /.contact__form-input-block -->
 
+            <input class="contact__form-submit" type="submit" placeholder="Submit">
         </form>
  
         <div class="contact__addinfo">
@@ -2450,7 +2447,7 @@
 
     </div>
     <!-- /.container -->
-  </section>
+  </footer>
   <!-- /.contact -->
 
  </main>
