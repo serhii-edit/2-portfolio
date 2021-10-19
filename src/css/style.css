@@ -544,6 +544,15 @@ a {
   top: 25px;
   right: 35px;
   z-index: 2;
+  text-align: right;
+  padding: 15px;
+  padding-right: 35px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 350ms;
+}
+.header__nav:hover {
+  background: white;
 }
 .header__nav-button {
   display: block;
@@ -1614,7 +1623,6 @@ a {
 .offer__block-left, .offer__block-right {
   max-width: 300px;
   z-index: 2;
-  border: 1px solid green;
 }
 .offer__item {
   display: flex;
@@ -1863,6 +1871,27 @@ a {
 }
 .contact__addinfo-tel {
   color: #fff;
+}
+.contact__bottom {
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contact__bottom-logo {
+  background-color: transparent;
+}
+.contact__bottom-logo::before {
+  background: unset;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.contact__bottom-logo svg {
+  fill: #fff;
+}
+.contact__bottom-name {
+  position: unset;
+  color: #fff;
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 992px) {

@@ -64,7 +64,17 @@
     top: 25px;
     right: 35px;
     z-index: 2;
+    text-align: right;
 
+    padding: 15px;
+    padding-right: 35px;
+    border-radius: 15px;
+
+    background: rgba($white, 0.3);
+    transition: all 350ms;
+    &:hover {
+      background: rgba($white, 1);
+    }
     &-button {
       display: block;
 
