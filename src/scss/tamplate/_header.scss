@@ -2,75 +2,39 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  border-bottom: 2px solid $white;
   &__container {
     position: relative;
   }
-  &--margin {
-    padding-top: 20px;
-    // padding-bottom: 10px;
+  &--padding {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   &__wrap {
     &-logo {
       position: relative;
     }
   }
-  &__logo {
-    position: relative;
-    margin-right: 15px;
-    display: inline-block;
-    padding: 8px;
-    padding-bottom: 5px;
-    
-    background-color: #fff;
-    // background-clip: padding-box;
-    
-    border-radius: 100%;
-    // Border start
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -4px; /* !importanté */
-      border-radius: inherit; /* !importanté */
-      background: linear-gradient(180deg, $primary 0%, #FF00A8 100%);
-    }
-    // Border end
-  }
-  &__sy-logo {
-    width: 40px;
-    height: 38px;
-    display: inline-block;
-  }
   &__name {
-    position: absolute;
     display: inline-block;
 
-    color: $black;
+    color: $white;
 
     font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
     text-align: left;
 
-    top: 50%;
-    transform: translateY(-50%);
+    // top: 50%;
+    // transform: translateY(-50%);
   }
   // END Header Logo
 
   // START Header Navigation
   &__nav {
-    position: fixed;
-    top: 25px;
-    right: 35px;
     z-index: 2;
-    text-align: right;
+    text-align: center;
 
-    padding: 15px;
-    padding-right: 35px;
-    border-radius: 15px;
-
-    background: rgba($white, 0.3);
     transition: all 350ms;
     &:hover {
       background: rgba($white, 1);
@@ -110,6 +74,7 @@
     height: 70px;
     width: 75px;
     border-bottom-left-radius: 100%;
+    z-index: 5;
   } // Menu
   &__mobile {
     &-checkbox {

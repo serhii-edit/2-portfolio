@@ -1,10 +1,10 @@
 .hero {
   position: relative;
-  // margin-top: -80.5px;
-  margin-top: -74.5px;
-  // border: 2px solid $green;
+  // margin-top: -74.5px;
   width: 100%;
   height: 100vh;
+  // background: $heroBg;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
   &__container {
     // padding-top: 79.2px;
     display: flex;
@@ -27,7 +27,7 @@
     font-weight: bold;
     font-size: 35px;
     text-transform: uppercase;
-    color: $darkSilver;
+    color: $white;
 
     line-height: 40px;
     margin-bottom: 10px;
@@ -37,7 +37,7 @@
     font-weight: 400;
     font-size: 16px;
     
-    color: $darkSilver;
+    color: $black;
     max-width: 406px;
   }
   // End of Text
@@ -181,5 +181,6 @@
     background-size: cover;
     z-index: 2;
     margin-top: -90px;
+    fill: #000;
   }
 }

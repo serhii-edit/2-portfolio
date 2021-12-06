@@ -13,96 +13,72 @@
 />
 </head>
 <body>
-  
- <header class="header header--margin">
-   <div class="container header__container">
-     <div class="header__wrap-logo">
 
-      <div class="header__logo">
-        <img class="header__sy-logo" src="./img/svg/logo.svg" 
-        alt="Main image of author: Serhii Yakymenko">
+ <main class="main">
+  <section class="hero">
+
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__wrap-logo">
+   
+         <!-- /.header__sy-logo -->
+         <h3 class="header__name header--padding">Serhii Yakymenko</h3>
+        </div>
+        
       </div>
-      <!-- /.header__sy-logo -->
-      <h3 class="header__name">Serhii Yakymenko</h3>
-     </div>
-     <!-- /.header__logo -->
-     <!-- <div class="header__menu">
+      <!-- /.container -->
+      <nav class="header__nav">
+        <ul class="header__container-list">
+          <a href="#" class="header__nav-button">
+           Portfolio
+          </a>
+          <a href="#" class="header__nav-button">
+           About Me
+          </a>
+          <a href="#" class="header__nav-button">
+           Services
+          </a>
+          <a href="#" class="header__nav-button">
+           Plans
+          </a>
+          <a href="#" class="header__nav-button">
+           Contact
+          </a>
+        </ul>
+        <!-- /.header__container-list -->
+   
+      </nav>
+      <!-- /.header__nav -->
+   
+      <div class="header__menu">
        <input id="mobileMenuCheckbox" type="checkbox" class="header__mobile-checkbox">
        <label for="mobileMenuCheckbox" class="header__mobile-wrap-btn">
          <span class="header__mobile-btn"></span>
        </label>
-
+   
        <nav class="header__mobile-nav">
          <a href="#" class="header__mobile-item">
-          Main
+          Portfolio
          </a>
          <a href="#" class="header__mobile-item">
-           About
+           About Me
          </a>
          <a href="#" class="header__mobile-item">
-          Contact
+           Services
          </a>
          <a href="#" class="header__mobile-item">
-          ZZ
+          Plans
          </a>
+         <a href="#" class="header__mobile-item">
+           Contact
+          </a>
        </nav>
-    </div> -->
-    <!-- /.header__menu -->
-   </div>
-   <!-- /.container -->
-   <nav class="header__nav">
-     <ul class="header__container-list">
-       <a href="#" class="header__nav-button">
-        Portfolio
-       </a>
-       <a href="#" class="header__nav-button">
-        About Me
-       </a>
-       <a href="#" class="header__nav-button">
-        Services
-       </a>
-       <a href="#" class="header__nav-button">
-        Plans
-       </a>
-       <a href="#" class="header__nav-button">
-        Contact
-       </a>
-     </ul>
-     <!-- /.header__container-list -->
+    </div>
+   
+    </header>
+    <!-- /.header -->
+   
 
-   </nav>
-   <!-- /.header__nav -->
-
-   <div class="header__menu">
-    <input id="mobileMenuCheckbox" type="checkbox" class="header__mobile-checkbox">
-    <label for="mobileMenuCheckbox" class="header__mobile-wrap-btn">
-      <span class="header__mobile-btn"></span>
-    </label>
-
-    <nav class="header__mobile-nav">
-      <a href="#" class="header__mobile-item">
-       Portfolio
-      </a>
-      <a href="#" class="header__mobile-item">
-        About Me
-      </a>
-      <a href="#" class="header__mobile-item">
-        Services
-      </a>
-      <a href="#" class="header__mobile-item">
-       Plans
-      </a>
-      <a href="#" class="header__mobile-item">
-        Contact
-       </a>
-    </nav>
- </div>
-
- </header>
- <!-- /.header -->
-
- <main class="main">
-  <section class="hero">
     <div class="container hero__container">
  
       <div class="hero__content">
@@ -135,9 +111,6 @@
            <!-- /.hero__wrap-face -->
          </div>
          <!-- /.hero__container-face -->
- 
-         <div class="hero__arrow">
-         </div> <!-- /.hero__arrow -->
  
          <a href="" class="hero__portfolio">
            PORTFOLIO
@@ -197,7 +170,7 @@
   </section>
   <!-- /.hero -->
 
-  <div class="hero-wave"></div>
+  <!-- <div class="hero-wave"></div> -->
     <!-- /.hero-wave -->
 
   <section class="about">
@@ -2284,7 +2257,7 @@
       <div class="contact__dialog">
 
 
-        <form action="" class="contact__form">
+        <form action="_POST" class="contact__form">
           <h6 class="contact__form-title">
             <span class="contact__form-title-s">S</span>end me Massage</h6>
 
@@ -2478,6 +2451,8 @@
  <!-- /.main -->
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.mask.js"></script>
  <script src="./js/main.js"></script>
 </body>
 </html>
