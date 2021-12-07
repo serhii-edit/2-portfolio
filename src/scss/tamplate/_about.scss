@@ -2,6 +2,8 @@
   margin-top: 12px;
   width: 100%;
   max-width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
   
   // height: 330px;
   background-color: $lightSilver;
@@ -13,22 +15,27 @@
     align-items: flex-start;
   }
   &__left {
-    margin-left: $container-side;
-    padding-right: 25px;
+    padding: 30px;
+    background-color: $white;
+    border: 1px solid $silver;
+    border-radius: 25px
   }
   &__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    color: $white;
+    font-size: 42px;
+    // color: $white;
     margin-bottom: 10px;
+  }
+  &__text {
+    color: $black;
   }
   &__description {
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
-    color: $white;
+    // color: $white;
     max-width: 610px;
     margin-bottom: 60px;
   }
@@ -40,8 +47,8 @@
   }
   &__skills {
     text-align: center;
-    padding: 50px 40px;
-    margin: 14px;
+    padding: 20px 30px;
+    margin-right: 0;
     background-color: $white;
     border-radius: 5%;
     border: 1px solid $silver;

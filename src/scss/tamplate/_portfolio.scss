@@ -1,9 +1,13 @@
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: linear-gradient(120deg,#eb4f56,#9d66e9);
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 27px;
   &__header {
     text-align: center;
-    color: $black;
+    color: $white;
     margin-bottom: 30px;
     &-title {
       margin-bottom: 20px;
@@ -13,19 +17,6 @@
       font-size: 19px;
       &-small {
         color: $primary;
-        // position: relative;
-        // display: inline-block;
-        // margin-left: 5px;
-        // &::before {
-        //   position: absolute;
-        //   left: -4px;
-        //   content: "";
-        //   // display: inline-block;
-        //   line-height: 19px;
-        //   width: 2px;
-        //   height: 20px;
-        //   background-color: $primary;
-        // }
       }
     } 
     &-subtitle {
@@ -35,12 +26,12 @@
       margin-bottom: 20px;
     } 
     &-direction {
-      color: $x3SoftSilver;
+      color: $silver;
     }
     &-line {
       width: 75px;
       height: 4px;
-      background-color: $primary2;
+      background-color: $white;
       margin-left: auto;
       margin-right: auto;
     }
