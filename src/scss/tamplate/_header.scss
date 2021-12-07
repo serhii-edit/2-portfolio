@@ -1,10 +1,16 @@
 .header {
   width: 100%;
-  position: relative;
+  top: 0;
+  left: 0;
+  position: fixed;
   z-index: 2;
-  border-bottom: 2px solid $white;
+  border-bottom: 0.2px solid $silverC4;
+  background-color: rgba($black, 0.5);
   &__container {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &--padding {
     padding-top: 15px;
@@ -36,29 +42,39 @@
     text-align: center;
 
     transition: all 350ms;
-    &:hover {
-      background: rgba($white, 1);
-    }
     &-button {
-      display: block;
-
-      color: $black;
+      display: inline-block;
+      color: $white;
       font-size: 16px;
 
       text-decoration: none;
       text-transform: uppercase;
-      box-shadow: 0px 25px 20px -20px; 
       transition-duration: 200ms; 
+      padding: 4px;
+
+      border-radius: 14px;
+      & + & {
+        margin-left: 3px;
+      }
       &:hover {
         color: $primary;
-        box-shadow: rgba($primary, 1);
-      }
-      & + & {
-        margin-top: 15px;
+        background-color: $white;
       }
     }
   }
 
+  &__request {
+    font-size: 17px;
+    padding: 4px;
+    color: $blue;
+    border-radius: 12px;
+
+    transition: all 250ms;
+    &:hover {
+      box-shadow: rgba($blueFeature, 0.65) 0px 30px 60px -12px inset;
+      color: $white;
+    }
+  }
 
   &__menu {
     display: none;
