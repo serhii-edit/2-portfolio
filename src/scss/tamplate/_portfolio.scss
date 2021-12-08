@@ -42,9 +42,6 @@
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    & + & {
-      margin-top: 30px;
-    }
   }
   &__card {
     position: relative;
@@ -59,7 +56,6 @@
 
     border-radius: 30px;
 
-    background-color: $silver;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

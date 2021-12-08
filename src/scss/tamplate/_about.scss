@@ -11,14 +11,21 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
   &__left {
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+    margin-bottom: 35px;
     padding: 30px;
     background-color: $white;
-    border: 1px solid $silver;
-    border-radius: 25px
+    border: 1px solid $silverApple;
+    border-radius: 25px;
   }
   &__title {
     font-style: normal;
@@ -29,6 +36,7 @@
   }
   &__text {
     color: $black;
+    max-width: 450px;
   }
   &__description {
     font-style: normal;
@@ -36,14 +44,70 @@
     font-size: 17px;
     line-height: 20px;
     // color: $white;
-    max-width: 610px;
-    margin-bottom: 60px;
   }
-  &__resume {
-    padding: 14px 30px;
-    color: $primary2;
-    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 193, 7, 0.9) 100%);
-    border-radius: 40px;
+  &__duration {
+    text-align: center;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    width: 100%;
+    max-width: 360px;
+    background-color: $white;
+    border: 1px solid $silverApple;
+    border-radius: 25px;
+    &-title {
+      font-size: 18px;
+      opacity: 0.75;
+      text-align: left;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+    &-error {
+      display: inline-block;
+      font-weight: 600;
+      color: $silver;
+      font-size: 44px;
+      text-decoration: line-through;
+      margin-bottom: 5px;
+    }
+    &-success {
+      display: block;
+      font-weight: 600;
+      margin-left: auto;
+      margin-right: auto;
+
+      font-size: 44px;
+      background-image: linear-gradient(120deg, #eb4f56, #9d66e9);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__experience {
+    text-align: center;
+    padding: 50px 80px;
+    background-color: $white;
+    border: 1px solid $silverApple;
+    border-radius: 25px;
+    &-title {
+      font-size: 24px;
+      word-spacing: -10px;
+      background-image: linear-gradient(225deg,#5af141,#2a9dce);
+      -webkit-background-clip: text;
+      background-size: 100%;   
+      -webkit-text-fill-color: transparent;
+    }
+    &-num {
+      font-size: 64px;
+    }
+    &-subtitle {
+      font-size: 16px;
+      color: $darkSilver;
+    }
   }
   &__skills {
     text-align: center;
@@ -51,7 +115,7 @@
     margin-right: 0;
     background-color: $white;
     border-radius: 5%;
-    border: 1px solid $silver;
+    border: 1px solid $silverApple;
   }
   &__frontend {
     &-svg {
