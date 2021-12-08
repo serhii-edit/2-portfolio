@@ -223,6 +223,8 @@
     &__card {
       margin-left: unset !important;
       margin-top: 30px;
+      width: 100%;
+      // flex-basis: unset;
     }
   }
 }
