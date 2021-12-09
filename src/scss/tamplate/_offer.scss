@@ -5,6 +5,7 @@
   background-color: $white;
   margin-top: 12px;
   margin-bottom: 12px;
+  background-color: rgba(#7512f8, 0.06);
   &__header {
     &-title {
       text-align: center;
@@ -14,8 +15,12 @@
       font-size: 42px;
       color: $black;
       &-pre {
-        color: hsl(266, 94%, 52%);
-        font-size: 22px;
+        font-size: 26px;
+
+        background-image: linear-gradient(225deg, #5af141, #2a9dce);
+        -webkit-background-clip: text;
+        background-size: 100%;
+        -webkit-text-fill-color: transparent;
       }
     }
     margin-bottom: 50px;
@@ -36,23 +41,29 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: space-between;
+    align-items: space-around;
   }
-  &__block-left, &__block-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    z-index: 2;
+  &__block {
+    &-one, &-two {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      z-index: 2;
+    }
+    &-two {
+      margin-top: 30px;
+    }
   }
-  &__block-right {
-    margin-top: 72px;
+  &__block-bottom {
+    margin-top: 35px;
   }
   &__item {
     text-align: center;
 
-    -webkit-box-shadow: inset 0px 0px 10px 150px rgba($blueFeature, 0.10);
+    -webkit-box-shadow: inset 0px 0px 10px 150px rgba($white, 0.85);
     border-radius: 100px;
+    border: 1px solid $silverApple;
 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -63,7 +74,7 @@
       display: inline-block;
     }
     &-title {
-      // font-family: Barlow;
+      color: $blueFeature;
       font-family: system-ui;
       font-size: 18px;
       font-style: normal;
@@ -72,31 +83,15 @@
       margin-bottom: 7px;
     }
     &-about {
-      // font-family: Barlow;
-      // font-family: system-ui;
       font-style: normal;
       font-weight: 300;
-      font-size: 16px;
-      // line-height: 14px;
+      font-size: 14px;
 
       max-width: 245px;
       
-      color: #5E5E5E;
+      color: $primary2;
     }
     &-offer {
-      // font-family: Barlow;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 16px;
-      float: right;
-      color: #4D4DFF;
-      vertical-align: middle;
-
-      border-left: 3px solid $primary;
-      border-radius: 2px;
-      padding-left: 10px;
-      
       &-type  {
         display: block;
       }
