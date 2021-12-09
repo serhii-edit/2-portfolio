@@ -495,12 +495,19 @@ a {
   cursor: pointer;
 }
 
+.seperate {
+  width: 100%;
+  max-width: 100%;
+  background-color: #e2e2e2;
+  height: 14px;
+}
+
 .header {
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   border-bottom: 0.2px solid #C4C4C4;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(1px);
@@ -970,7 +977,7 @@ a {
   line-height: 18px;
   text-align: center;
   color: #717171;
-  max-width: 357px;
+  max-width: 312px;
   margin-bottom: 20px;
 }
 .about__skills-title {
@@ -1617,20 +1624,24 @@ a {
   position: relative;
   padding-top: 35px;
   padding-bottom: 35px;
+  background-color: #fff;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .offer__header {
   margin-bottom: 50px;
 }
 .offer__header-title {
+  text-align: center;
   font-family: system-ui;
   font-style: normal;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 42px;
   color: #000;
 }
 .offer__header-title-pre {
   color: #7512f8;
-  font-size: 18px;
+  font-size: 22px;
 }
 .offer__main-image {
   width: 100%;
@@ -1646,26 +1657,23 @@ a {
 }
 .offer__content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
 }
 .offer__block-left, .offer__block-right {
-  max-width: 300px;
-  z-index: 2;
-}
-.offer__item {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
+  z-index: 2;
 }
-.offer__item + .offer__item {
-  margin-top: 25px;
+.offer__block-right {
+  margin-top: 72px;
 }
-.offer__item-icon-wrap {
-  display: inline-block;
-  margin-right: 20px;
-  align-self: center;
+.offer__item {
+  text-align: center;
+  padding-right: 14px;
+  padding-left: 14px;
 }
 .offer__item-text {
   display: inline-block;
@@ -1682,6 +1690,7 @@ a {
   font-weight: 300;
   font-size: 13px;
   line-height: 14px;
+  max-width: 245px;
   color: #5E5E5E;
 }
 .offer__item-offer {
@@ -1695,14 +1704,18 @@ a {
   border-left: 3px solid #006DF0;
   border-radius: 2px;
   padding-left: 10px;
-  margin-bottom: 20px;
 }
 .offer__item-offer-type {
   display: block;
 }
-.offer__item-offer-btn {
-  display: block;
-  float: right;
+.offer__footer-wrap {
+  max-width: 100%;
+  text-align: center;
+}
+.offer__footer-btn {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 11px 14px;
   font-style: normal;
   font-weight: 500;
@@ -1711,8 +1724,9 @@ a {
   border-radius: 20px;
   background: linear-gradient(92.29deg, #0FB06D -3.97%, #4DA7EA 100%);
   transition: all 350ms;
+  text-align: center;
 }
-.offer__item-offer-btn:hover {
+.offer__footer-btn:hover {
   background: #4DA7EA;
 }
 
