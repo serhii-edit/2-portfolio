@@ -1672,15 +1672,19 @@ a {
 }
 .offer__item {
   text-align: center;
-  padding-right: 14px;
-  padding-left: 14px;
+  -webkit-box-shadow: inset 0px 0px 10px 150px rgba(0, 109, 240, 0.1);
+  border-radius: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .offer__item-text {
   display: inline-block;
 }
 .offer__item-title {
   font-family: system-ui;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 7px;
@@ -1688,8 +1692,7 @@ a {
 .offer__item-about {
   font-style: normal;
   font-weight: 300;
-  font-size: 13px;
-  line-height: 14px;
+  font-size: 16px;
   max-width: 245px;
   color: #5E5E5E;
 }

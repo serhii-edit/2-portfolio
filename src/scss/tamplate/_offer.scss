@@ -50,8 +50,14 @@
   }
   &__item {
     text-align: center;
-    padding-right: 14px;
-    padding-left: 14px;
+
+    -webkit-box-shadow: inset 0px 0px 10px 150px rgba($blueFeature, 0.10);
+    border-radius: 100px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 
     &-text {
       display: inline-block;
@@ -59,7 +65,7 @@
     &-title {
       // font-family: Barlow;
       font-family: system-ui;
-      font-size: 14px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
 
@@ -70,8 +76,8 @@
       // font-family: system-ui;
       font-style: normal;
       font-weight: 300;
-      font-size: 13px;
-      line-height: 14px;
+      font-size: 16px;
+      // line-height: 14px;
 
       max-width: 245px;
       
