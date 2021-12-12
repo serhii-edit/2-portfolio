@@ -282,43 +282,21 @@
 
 
 // Modal
-@media screen and (max-width: 1446px) {
-  .portfolio {
-    &__modal {
-      overflow-y: scroll;
-      padding-bottom: 90px;
-    }
-    &__group {
-      &-list {
-        display: block;
-      }
-    }
-    &__list {
-      &-wrap {
-        display: block;
-        margin-left: 0 !important;
-        & + & {
-          margin-top: 10px;
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 1446px) {
+//   .portfolio {
+//     &__list {
+//       &-wrap {
+//         display: block;
+//         margin-left: 0 !important;
+//         & + & {
+//           margin-top: 10px;
+//         }
+//       }
+//     }
+//   }
+// }
 @media screen and (max-width: 992px) {
   .portfolio {
-    &__modal {
-      background-color: rgba(0, 0, 0, 0.90);
-      &-content {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
-        margin-left: auto;
-        margin-right: auto;
-
-        max-width: 520px;
-      }
-    }
     &__wrap {
       &-photo {
         margin-bottom: 20px;
@@ -368,9 +346,21 @@
       // transform: translateY(-30px);
       // transform: translateX(-50%);
     }
-  }
+    &__group {
+      &-list {
+        max-width: 230px;
+      }
+    }
+    &__list {
+      &-wrap {
+        & + & {
+          margin-top: 10px;
+        }
+      }
+    }
+  } // Portoflio
 }
-// Portfolio (END)
+// Portfolio Media (END)
 
 // Feature (START)
 @media screen and (max-width: 992px) {
