@@ -278,23 +278,6 @@
     }
   }
 }
-
-
-
-// Modal
-// @media screen and (max-width: 1446px) {
-//   .portfolio {
-//     &__list {
-//       &-wrap {
-//         display: block;
-//         margin-left: 0 !important;
-//         & + & {
-//           margin-top: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
 @media screen and (max-width: 992px) {
   .portfolio {
     &__wrap {
@@ -326,25 +309,19 @@
 @media screen and (max-width: 725px) {
   .portfolio {
     &__modal {
-      &-dialog {
-        padding-top: 0;
+      &-wrap {
+        &-title {
+          margin: unset;
+          margin-bottom: 30px;
+          padding: 10px 26px;
+        }
       }
-      padding-top: 15px;
+      &-title {
+        font-size: 20px;
+      }
     }
     &__btn-exit {
-      position: unset;
-      display: block;
-
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 15px;
-      // left: 50%;
-      // right: 0;
-      // top: 30px;
-      // margin-left: auto;
-      // margin-right: auto;
-      // transform: translateY(-30px);
-      // transform: translateX(-50%);
+      top: 15px;
     }
     &__group {
       &-list {
@@ -359,6 +336,27 @@
       }
     }
   } // Portoflio
+}
+
+@media screen and (max-width: 431px) {
+  .portfolio {
+    &__btn {
+      &-exit {
+        font-size: 22.5px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .portfolio {
+    &__modal {
+      &-title {
+        font-size: 16px;
+      }
+    }
+  }
 }
 // Portfolio Media (END)
 
