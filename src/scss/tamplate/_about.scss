@@ -23,6 +23,8 @@
     }
     margin-bottom: 35px;
     padding: 30px;
+  }
+  &__shape {
     background-color: $white;
     border: 1px solid $silverApple;
     border-radius: 25px;
@@ -55,9 +57,6 @@
 
     width: 100%;
     max-width: 360px;
-    background-color: $white;
-    border: 1px solid $silverApple;
-    border-radius: 25px;
     &-title {
       font-size: 18px;
       opacity: 0.75;
@@ -90,9 +89,6 @@
   &__experience {
     text-align: center;
     padding: 50px 80px;
-    background-color: $white;
-    border: 1px solid $silverApple;
-    border-radius: 25px;
     &-title {
       font-size: 24px;
       word-spacing: -10px;
@@ -109,13 +105,39 @@
       color: $darkSilver;
     }
   }
+  &__builder {
+    margin-top: 35px;
+    padding: 35px;
+    text-align: center;
+    background-color: $white;
+
+
+    &-title {
+      display: inline;
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+
+      background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgb(0, 163, 238) 100.2% );
+      -webkit-background-clip: text;
+      background-size: 100%;   
+      -webkit-text-fill-color: transparent;
+      sup {
+        display: inline;
+
+        -webkit-background-clip: text;
+        background-image: linear-gradient(225deg, #5af141, #2a9dce);
+        background-size: 100%;
+
+        font-size: 26px;
+        font-weight: 400;
+      }
+    }
+  }
   &__skills {
     text-align: center;
     padding: 20px 30px;
     margin-right: 0;
-    background-color: $white;
-    border-radius: 5%;
-    border: 1px solid $silverApple;
   }
   &__frontend {
     &-svg {
