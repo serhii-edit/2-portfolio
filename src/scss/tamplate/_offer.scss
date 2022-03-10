@@ -5,7 +5,8 @@
   background-color: $white;
   margin-top: 12px;
   margin-bottom: 12px;
-  background-color: rgba(#7512f8, 0.06);
+  // background-color: rgba(#7512f8, 0.06);
+  background-color: rgba($lightSilver, 0.4);
   &__header {
     &-title {
       text-align: center;

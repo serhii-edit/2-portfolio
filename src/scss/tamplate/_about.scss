@@ -43,19 +43,19 @@
     // padding-bottom: 0;
     &-text {
       color: $black;
-      max-width: 450px;
+      max-width: 385px;
       vertical-align: middle;
     }
     &-title {
       font-style: normal;
-      font-weight: bold;
+      font-weight: 400;
       font-size: 34px;
       margin-bottom: 8px;
     }
     &-description {
-      font-style: normal;
+      // font-style: normal;
       font-weight: 400;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 20px;
       // color: $white;
     }
@@ -208,6 +208,7 @@
     }
   } 
   &__skills {
+    display: none;
     &-title {
       // font-family: Nunito;
       font-style: normal;
