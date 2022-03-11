@@ -231,6 +231,20 @@
       // margin-bottom: 20px;
     }
   }
+  &__features {
+    background-color: $black;
+    color: $white;
+    &-icon {
+      &-s {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      }
+      width: 60px;
+      flex-basis: 30%;
+    }
+  }
   &__wrap {
     &--margin {
       margin-bottom: 20px;
