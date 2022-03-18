@@ -235,14 +235,15 @@
     background-color: $black;
     color: $white;
     &-icon {
-      &-s {
+      &s {
       display: flex;
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
+      max-width: 255px;
+      gap: 18px 18px;
       }
-      width: 60px;
-      flex-basis: 30%;
+      width: 70px;
     }
   }
   &__wrap {

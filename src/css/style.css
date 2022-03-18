@@ -1045,14 +1045,15 @@ a {
   color: #fff;
 }
 .about__features-icon {
-  width: 60px;
-  flex-basis: 30%;
+  width: 70px;
 }
-.about__features-icon-s {
+.about__features-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 255px;
+  gap: 18px 18px;
 }
 .about__wrap--margin {
   margin-bottom: 20px;
