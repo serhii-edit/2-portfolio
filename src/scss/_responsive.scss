@@ -161,6 +161,23 @@
 
 
 // About (START)
+@media screen and (max-width: 1075px) {
+  .about {
+    &__distance {
+      &-title {
+        font-size: 38px;
+      }
+      &-global {
+        max-width: 26px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 920px) {
+  .about {
+    
+  }
+}
 @media screen and (max-width: 740px) {
   .about {
     padding-top: 50px;

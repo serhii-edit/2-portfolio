@@ -1041,8 +1041,15 @@ a {
   color: #000;
 }
 .about__features {
-  background-color: #000;
+  background-color: #fff;
   color: #fff;
+}
+.about__features-title {
+  text-align: center;
+  font-size: 22px;
+  color: #00C773;
+  font-weight: 300px;
+  margin-bottom: 28px;
 }
 .about__features-icon {
   width: 70px;
@@ -1054,6 +1061,15 @@ a {
   flex-wrap: wrap;
   max-width: 255px;
   gap: 18px 18px;
+}
+.about__features-more {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 14px;
+  color: #2d2e3a;
+  font-size: 26px;
+  font-weight: 1000;
 }
 .about__wrap--margin {
   margin-bottom: 20px;
@@ -2098,6 +2114,14 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1075px) {
+  .about__distance-title {
+    font-size: 38px;
+  }
+  .about__distance-global {
+    max-width: 26px;
   }
 }
 @media screen and (max-width: 740px) {

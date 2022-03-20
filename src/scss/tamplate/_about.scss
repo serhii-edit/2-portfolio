@@ -232,8 +232,15 @@
     }
   }
   &__features {
-    background-color: $black;
+    background-color: $white;
     color: $white;
+    &-title {
+      text-align: center;
+      font-size: 22px;
+      color: $green;
+      font-weight: 300px;
+      margin-bottom: 28px;
+    }
     &-icon {
       &s {
       display: flex;
@@ -244,6 +251,15 @@
       gap: 18px 18px;
       }
       width: 70px;
+    }
+    &-more {
+      display: block;
+      text-align: center;
+      margin: auto;
+      margin-top: 14px;
+      color: $darkBlue;
+      font-size: 26px;
+      font-weight: 1000;
     }
   }
   &__wrap {
