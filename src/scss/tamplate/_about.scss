@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     max-height: 195px;
     min-height: 195px;
     overflow-y: auto;
@@ -73,7 +74,7 @@
     padding-right: 30px;
 
     width: 100%;
-    max-width: 360px;
+    // max-width: 360px;
     &-title {
       font-size: 18px;
       opacity: 0.75;
