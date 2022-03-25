@@ -2187,13 +2187,41 @@ a {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .about__develop {
-    padding-top: 130px;
-  }
   .about__experience, .about__distance {
     max-width: 187px;
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .about__develop {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .about__develop-title {
+    font-size: 24px;
+  }
+  .about__develop-description {
+    line-height: 19px;
+    font-size: 13.5px;
+  }
+  .about__duration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about__duration-title {
+    font-size: 16px;
+  }
+  .about__duration-error, .about__duration-success {
+    font-size: 35px;
+  }
+  .about__distance-title {
+    font-size: 22px;
+  }
+  .about__distance-link {
+    font-size: 16px;
+  }
+  .about__distance-global {
+    display: none;
   }
 }
 @media screen and (max-width: 740px) {
@@ -2230,6 +2258,35 @@ a {
     font-size: 14px;
     max-width: 485px;
     margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 501px) {
+  .about__shape + .about__shape {
+    margin-left: 10px;
+  }
+  .about__develop, .about__duration {
+    width: 100% !important;
+    max-width: unset !important;
+  }
+  .about__experience, .about__distance {
+    max-width: 150px;
+    max-height: 158px;
+  }
+  .about__experience-title {
+    font-size: 22px;
+  }
+  .about__experience-num {
+    font-size: 48px;
+  }
+  .about__experience-subtitle {
+    font-size: 13px;
+  }
+  .about__distance-title {
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+  .about__distance-link {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 400px) {
