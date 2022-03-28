@@ -2264,13 +2264,42 @@ a {
   .about__shape + .about__shape {
     margin-left: 10px;
   }
+  .about__wrap-center {
+    margin-top: 10px;
+  }
   .about__develop, .about__duration {
-    width: 100% !important;
-    max-width: unset !important;
+    width: unset;
+    max-width: 150px !important;
   }
   .about__experience, .about__distance {
     max-width: 150px;
     max-height: 158px;
+  }
+  .about__develop {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .about__duration {
+    width: unset !important;
+    max-width: unset !important;
+    margin: unset !important;
+    height: unset;
+    width: 100% !important;
+    max-width: 300px !important;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+  }
+  .about__duration-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: unset;
+  }
+  .about__duration-error, .about__duration-success {
+    margin: 0;
+    font-size: 30px;
+    text-align: unset;
   }
   .about__experience-title {
     font-size: 22px;
@@ -2287,6 +2316,36 @@ a {
   }
   .about__distance-link {
     font-size: 15px;
+  }
+  .about__builder {
+    margin-top: 10px !important;
+  }
+  .about__builder-title {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .about__experience, .about__distance {
+    max-width: 120px;
+  }
+}
+@media screen and (max-width: 299px) {
+  .about__shape {
+    margin: unset !important;
+    max-width: 100%;
+  }
+  .about__shape + .about__shape {
+    margin: unset;
+    margin: 10px 0 0 0 !important;
+  }
+  .about__experience-subtitle {
+    font-size: 16px;
+  }
+  .about__distance-title {
+    font-size: 24px;
+  }
+  .about__distance-link {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 400px) {
