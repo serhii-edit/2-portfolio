@@ -1569,6 +1569,11 @@ a {
   cursor: pointer;
 }
 .feature__slide {
+  background: rgba(255, 255, 255, 0.6);
+  height: 344px !important;
+  padding: 32px;
+  border: 1px solid #f2f2f2;
+  border-radius: 38px;
   text-align: center;
 }
 .feature__slide-wrap-svg {
